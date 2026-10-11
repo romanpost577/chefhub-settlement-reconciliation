@@ -1,336 +1,201 @@
-# PHP Symfony Environment
-A scalable Docker-based environment required to run Symfony (based on official php and mysql docker hub repositories).
+# ChefHub Settlement Reconciliation
 
-[![Actions Status](https://github.com/systemsdk/docker-nginx-php-symfony/workflows/Symfony%20App/badge.svg)](https://github.com/systemsdk/docker-nginx-php-symfony/actions)
-[![CircleCI](https://circleci.com/gh/systemsdk/docker-nginx-php-symfony.svg?style=svg)](https://circleci.com/gh/systemsdk/docker-nginx-php-symfony)
-[![Coverage Status](https://coveralls.io/repos/github/systemsdk/docker-nginx-php-symfony/badge.svg)](https://coveralls.io/github/systemsdk/docker-nginx-php-symfony)
-[![Latest Stable Version](https://poser.pugx.org/systemsdk/docker-nginx-php-symfony/v)](https://packagist.org/packages/systemsdk/docker-nginx-php-symfony)
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+Reconciles ChefHub's internal orders against settlement reports from two payment processors, finds every
+discrepancy, calculates the money at risk and shows how much each chef can be paid now.
 
-[Source code](https://github.com/systemsdk/docker-nginx-php-symfony.git)
+Solution to the Yuno backend challenge "The ChefHub Batch Settlement Nightmare".
 
-## Requirements
-* Docker Engine version 23.0 or later
-* Docker Compose version 2.0 or later
-* An editor or IDE
-* MySQL Workbench
+![Reconciliation report page](docs/images/reconciliation-report.png)
 
-Note: We recommend using a Linux Ubuntu-based OS for the best experience.
+## Quick start
 
-## Components
-1. Nginx 1.29 - Web server and reverse proxy.
-2. PHP 8.5 fpm - Main application runtime.
-3. MySQL 8 - Primary relational database.
-4. Symfony 7 - High-performance PHP framework.
-5. RabbitMQ 4 - Robust message broker for background jobs.
-6. Mailpit - Email testing tool (available in the development environment only).
+Requires Docker and `make`. PHP runs inside the containers.
 
-## Setting up Docker Engine & Docker Compose
-To install Docker Engine and Docker Compose, please follow the official [Docker Engine Installation Guide](https://docs.docker.com/engine/install/).
-
-**For Linux Users:**
-After installation, run the following command to manage Docker as a non-root user (this allows you to run Docker without `sudo`):
 ```bash
-sudo usermod -aG docker $USER
+make start            # start the containers
+make reconcile-demo   # generate 1,000 sample orders and reconcile them
 ```
 
-Note: You must log out and log back in for this change to take effect.
+Open **http://localhost/reconciliation** to see the report. The same report is written to `var/reports/latest/`.
 
-**For macOS Users:**
-If you are using Docker Desktop for macOS 12.2 or later, we highly recommend enabling [virtiofs](https://www.docker.com/blog/speed-boost-achievement-unlocked-on-docker-desktop-4-6-for-mac/) for a significant performance boost.
+To reconcile your own files:
 
-Note: Enabled by default since Docker Desktop v4.22.
-
-## Setting up the DEV environment
-1. You can clone this repository from GitHub or install via composer.
-
-   If you have installed composer, you can use the next cmd command:
-   ```bash
-   composer create-project systemsdk/docker-nginx-php-symfony example-app
-   ```
-
-2. Set a unique `APP_SECRET` for the application in `.env.prod` and `.env.staging` files.
-   * **Secret Key**: You can generate a secure key by running: `openssl rand -hex 16` (do not use third-party websites for generating this value).
-   * **Environment Files**: Do not use `.env.local.php` on dev and test environments (delete it if it exists).
-   * **Custom Configs**: If you want to change default web port/xdebug configurations, you can create an `.env.local` file and override parameters there (see `.env` file).
-   * **Database**: Delete the `var/mysql-data` folder if it exists before starting.
-
-3. Verify that your local `hosts` file contains the default mapping for `localhost` (this is usually set by default in all operating systems):
-   ```text
-   127.0.0.1    localhost
-   ```
-
-   Note: The file is located at `/etc/hosts` on Linux/macOS and `C:\Windows\System32\drivers\etc\hosts` on Windows.
-
-4. Configure Xdebug (Optional)
-
-   Depending on your operating system, you can customize Xdebug behavior by editing either `/docker/dev/xdebug-main.ini` (Linux/Windows) or `/docker/dev/xdebug-osx.ini` (macOS).
-
-    * To debug every request (Default):
-      
-      This is the default setting. It will intercept and debug all incoming API requests.
-      ```ini
-      xdebug.start_with_request = yes
-      ```
-
-    * To debug only specific requests (On-Demand):
-      
-      If you prefer to trigger the debugger manually only when making requests from a browser frontend, change the configuration to:
-      ```ini
-      xdebug.start_with_request = no
-      ```
-      
-      Tip: Install the "Xdebug helper" extension for Chrome or Firefox and set the IDE Key to `PHPSTORM` in the extension settings.
-
-5. Build and Initialize the Environment
-
-   Run the following commands in your terminal to build the Docker images, start the containers, install PHP dependencies:
-   ```bash
-   make build
-   make start
-   make composer-install
-   ```
-
-6. Apply Migrations and Configurations
-
-   Execute the following commands to set up the database structure, prepare message broker transports:
-   ```bash
-   make migrate
-   make messenger-setup-transports
-   ```
-
-7. Access Application Services
-
-   Once the environment is successfully running, you can access the various services in your browser using the following URLs:
-   * **DEV page:** [http://localhost](http://localhost)
-   * **RabbitMQ Management:** [http://localhost:15672](http://localhost:15672)
-   * **Mailpit (Debug Email):** [http://localhost:8025](http://localhost:8025)
-
-## Setting up the STAGING environment locally
-Important: This section describes how to set up the staging environment locally for debugging and verification purposes only. A real STAGING environment must be deployed on a dedicated server and should be as close to the PRODUCTION environment as possible.
-
-Note: These steps assume you have already completed steps 1 through 3 of the "Setting up the DEV environment" section above.
-
-1. Database Clean-up
-   
-   Delete the `var/mysql-data` folder if it exists before starting.
-
-2. Build and Initialize the Environment
-
-   Run the following commands in your terminal to build the staging Docker images, start the containers:
-   ```bash
-   make build-staging
-   make start-staging
-   ```
-   Note: With `opcache.validate_timestamps=0` ([php.ini](docker/staging/php.ini)) enabled for performance, any manual file changes or code updates require a PHP-FPM restart/reload to take effect.
-
-3. Apply Migrations and Configurations
-
-   Execute the following commands to set up the database structure, prepare message broker transports:
-   ```bash
-   make migrate-no-test
-   make messenger-setup-transports
-   ```
-
-## Setting up the PROD environment locally
-Important: This section describes how to set up the production environment locally for debugging and verification purposes only. A real PROD environment must be deployed on a dedicated server.
-
-Note: These steps assume you have already completed steps 1 through 3 of the "Setting up the DEV environment" section above.
-
-1. Database and RabbitMQ Clean-up
-
-   Delete the `var/mysql-data`, `var/rabbitmq` folders if they exist before starting.
-
-2. Edit the `.env.prod` file and set a secure password for MySQL, as well as a username and password for RabbitMQ.
-
-3. Build and Initialize the Environment
-
-   Run the following commands in your terminal to build the production Docker images, start the containers:
-   ```bash
-   make build-prod
-   make start-prod
-   ```
-   Note: With `opcache.validate_timestamps=0` ([php.ini](docker/prod/php.ini)) enabled for performance, any manual file changes or code updates require a PHP-FPM restart/reload to take effect.
-
-4. Apply Migrations and Configurations
-
-   Execute the following commands to set up the database structure, prepare message broker transports:
-   ```bash
-   make migrate-no-test
-   make messenger-setup-transports
-   ```
-
-## Accessing Container Shells
-Once the application is running (via `make start`), you can easily access the command line inside your containers.
-
-To open a shell inside the main **Symfony** container, run:
 ```bash
-make ssh
+make exec cmd="php bin/console app:reconcile \
+  --internal=path/internal_orders.csv \
+  --processor-a=path/processor_a_settlement.csv \
+  --processor-b=path/processor_b_settlement.json \
+  --out=var/reports"
 ```
 
-You can also access the other services using the following commands:
-```bash
-make ssh-nginx
-make ssh-supervisord
-make ssh-mysql
-make ssh-rabbitmq
+Without running anything: inputs are in [`data/sample/`](data/sample/), a generated report is in
+[`docs/example-report/`](docs/example-report/).
+
+## Console output
+
+```
+$ make reconcile-demo
+
+ChefHub settlement reconciliation
+=================================
+
+ ----------------- -------
+  Internal orders   1000
+  Settlements       961
+  Matched (exact)   887
+  Matched (fuzzy)   8
+  Warnings          1
+  Duration          78 ms
+ ----------------- -------
+
+ ----------------------- ------- ----------------
+  Discrepancy type        Count   Exposure (USD)
+ ----------------------- ------- ----------------
+  missing_in_settlement   56      1,525.04
+  missing_in_database     30      892.44
+  amount_mismatch         21      54.90
+  status_mismatch         8       198.45
+  duplicate_settlement    7       156.70
+  TOTAL                   122     2,827.53
+ ----------------------- ------- ----------------
+
+ [OK] Report written to var/reports/latest
 ```
 
-Tip: Type `exit` and press Enter to leave the container's shell and return to your local terminal.
+The generator records how many discrepancies of each type it seeded (`data/sample/manifest.json`). The engine
+finds exactly that number for every type.
 
-## Rebuilding Containers
-If you modify any `Dockerfile` or environment configurations, you will need to rebuild the containers using the following commands:
-```bash
-make down
-make build
-make start
+## How it works
+
+```
+internal_orders.csv ──┐
+processor_a.csv ──────┼─► readers ─► Transaction ─► 1. exact match by order ref
+processor_b.json ─────┘   (normalize)                2. fuzzy match for the rest
+                                                     3. classify each order
+                                                            │
+                          report.json, discrepancies.csv, chef_payouts.csv, /reconciliation
 ```
 
-Note: Use environment-specific commands if you need to rebuild the test, staging, or production environments. For a complete list of available commands, run `make help`.
+### Sources
 
-## Starting and Stopping Containers
-Use the following commands to start or stop the development environment:
-```bash
-make start
-make stop
+Each source has its own field names, formats and statuses. Readers convert them to one `Transaction`: canonical
+order ID, amount in integer minor units, UTC time, status `paid` / `refunded` / `cancelled`.
+
+| | Internal orders | Processor A (card) | Processor B (e-wallet) |
+|---|---|---|---|
+| Format | CSV | CSV | JSON |
+| Order reference | `order_id` (`CH-000123`) | `merchant_order_ref` | `merchant.order_ref`, sometimes `ch123` or `null` |
+| Amount | `total_amount` (`1234.50`) | `amount_minor` (cents) | `total` (`"1234.5"`) |
+| Time | `paid_at` (ISO 8601, local offset) | `txn_time` (`d/m/Y H:i:s`, UTC) | `timestamp` (unix) |
+| Status | `completed` / `refunded` / `cancelled` | `SETTLED` / `REFUNDED` | `success` / `refunded` |
+
+Three currencies (PHP, IDR, THB), one week of data, about 60 % of orders through A and 40 % through B.
+
+A malformed row is skipped and reported as a warning with file, row and reason. A repeated processor row (same
+transaction ID) is counted once and reported. A missing or unreadable file stops the run with exit code 1.
+
+### Matching
+
+1. **Exact:** the settlement's order reference is normalized (`ch123` → `CH-000123`) and looked up in a hash index.
+2. **Fuzzy** (for settlements without a usable reference): same currency, same amount, same customer and payment
+   time within 5 seconds, only against orders that have no settlement yet. If more than one order fits, nothing is
+   matched and a warning is reported: a wrong match would hide money.
+3. **Classify** every order and every leftover settlement:
+
+| Type | Rule | Money at risk |
+|---|---|---|
+| `missing_in_settlement` | paid or refunded order that no processor settled | order amount |
+| `missing_in_database` | settlement with no matching order (phantom charge) | settled amount |
+| `amount_mismatch` | amounts differ by more than 0.05, or the currencies differ | the difference |
+| `status_mismatch` | refunded on one side only, or a cancelled order that was charged | settled amount |
+| `duplicate_settlement` | one order settled twice, by the same or by different processors | each extra settlement |
+
+The challenge lists four types and asks for five; the fifth is duplicate charges, which the brief names as a kind
+of phantom transaction.
+
+Exposure is shown per currency and in USD at fixed indicative rates (PHP 0.0172, IDR 0.000061, THB 0.0285).
+Priority by USD: **high** ≥ 100, **medium** ≥ 10, **low** below. All lists are sorted by USD impact.
+
+### Chef payouts
+
+Per chef: `settled_gross` (orders paid on both sides with no discrepancy), `commission` (15 %), `payable_now`,
+`on_hold` (orders with any discrepancy) and `discrepancy_count`. Sorted by the amount on hold in USD.
+
+## Output
+
+| File | Content |
+|---|---|
+| `report.json` | `summary` (counts, matches, exposure by type and currency), `insights` (top 20, type × processor, priorities), `chef_payouts`, `discrepancies`, `warnings`, `meta` (inputs, duration, memory) |
+| `discrepancies.csv` | one row per discrepancy: type, priority, order, settlement, customer, chef, amounts, impact, note |
+| `chef_payouts.csv` | one row per chef and currency |
+
+Reports go to `var/reports/<timestamp>/` and are copied to `var/reports/latest/`, which the page reads. CSV cells
+that a spreadsheet would run as a formula are prefixed with `'`.
+
+## Performance
+
+| Dataset | Orders | Settlements | Time | Peak memory |
+|---|---|---|---|---|
+| `make reconcile-demo` | 1,000 | 961 | 0.08 s | — |
+| `make reconcile-full` | 45,600 | 44,190 (47K transactions in total) | 1.4 s | 157 MB |
+
+Measured in the `symfony` container with Xdebug off. Matching is O(n) through hash indexes; most of the time is
+parsing.
+
+**Scaling.** Objects take about 68 MB per 100K transactions, so 500K fits in the 2 GB CLI memory limit. Beyond that:
+
+1. Partition by currency and settlement week and run partitions in parallel (Messenger and RabbitMQ are already in
+   the stack).
+2. Stream the readers (they already read row by row) and merge-join sorted files instead of holding everything in
+   memory.
+3. Or load each source into indexed MySQL staging tables and reconcile with SQL joins, keeping only discrepancies.
+
+## Project layout
+
+```
+src/Reconciliation/
+  Model/        Transaction, Money, Currency, FxRates, enums, result objects
+  Ingestion/    one reader per source, CSV parsing, order reference normalization
+  Matching/     Reconciler: exact and fuzzy matching, classification (no I/O)
+  Report/       report builder, chef payouts, JSON and CSV writers
+  TestData/     deterministic test data generator with a manifest
+src/Command/    app:reconcile, app:generate-test-data
+src/Controller/ GET /reconciliation
+tests/          Unit, Integration (commands, end to end), Application (HTTP)
+data/sample/    test data: 3 sources + manifest.json
 ```
 
-If you are working with the staging or production environments, use their respective commands:
-* Staging: `make start-staging` or `make stop-staging`.
-* Production: `make start-prod` or `make stop-prod`.
+## Tests
 
-## Stopping and Removing Containers
-To completely stop and remove all environment containers and networks, use the following command:
 ```bash
-make down
+make phpunit   # 88 tests, coverage report in reports/coverage/
+make phpstan   # level max
+make ecs       # coding standard
 ```
 
-Note: Use environment-specific commands if you need to tear down the test, staging, or production environments. For a complete list of available commands, run `make help`.
+- **Unit:** each reader (formats, malformed rows, BOM and CRLF, duplicates), every discrepancy rule including the
+  0.05 boundary, fuzzy matching and ambiguity, mixed currencies, chef payouts, report totals.
+- **Integration:** `app:reconcile` on hand-written fixtures, missing input file, unwritable output directory.
+- **End to end:** generate 3,000 orders, reconcile, and compare every count with the generator's manifest.
+- **Application:** the report page, filtering by type, no report yet.
 
-## Available Makefile Commands
-Here is a reference list of the primary commands available for managing the environment, databases, logs and testing:
-```bash
-make build
-make build-test
-make build-staging
-make build-prod
+Line coverage of `src/`: 96.8 %.
 
-make start
-make start-test
-make start-staging
-make start-prod
+## Design decisions
 
-make stop
-make stop-test
-make stop-staging
-make stop-prod
+- **No database.** Reconciliation is a batch join; doing it in memory keeps the engine simple and fast. Persistence
+  and run history are the next step, not part of this solution.
+- **Money as integers.** Amounts are minor units; floats are used only for the indicative USD figures.
+- **Pure core.** `Reconciler` takes transactions and returns a result. Reading files and writing reports stay at the
+  edges, so the rules are tested without I/O.
+- **Ambiguity is reported, not guessed.** Unclear fuzzy matches stay open for a person to check.
+- **Proof by manifest.** Correctness is checked by comparing seeded and found discrepancies, not by eye.
 
-make down
-make down-test
-make down-staging
-make down-prod
+## Known limitations
 
-make restart
-make restart-test
-make restart-staging
-make restart-prod
-
-make env-staging
-make env-prod
-
-make ssh
-make ssh-root
-make fish
-make ssh-nginx
-make ssh-supervisord
-make ssh-mysql
-make ssh-rabbitmq
-
-make composer-install-no-dev
-make composer-install
-make composer-update
-make composer-audit
-
-make info
-make help
-
-make logs
-make logs-nginx
-make logs-supervisord
-make logs-mysql
-make logs-rabbitmq
-
-make drop-migrate
-make migrate
-make migrate-no-test
-
-make fixtures
-
-make messenger-setup-transports
-
-make phpunit
-make report-code-coverage
-
-make phpcs
-make ecs
-make ecs-fix
-make phpmetrics
-make phpcpd
-make phpcpd-html-report
-make phpmd
-make phpstan
-make phpinsights
-
-# ... and many more
-```
-Note: For a complete list of all available commands, please inspect the `Makefile` directly or run `make help`.
-
-## Architecture & packages
-* [Symfony](https://symfony.com)
-* [doctrine-migrations-bundle](https://github.com/doctrine/DoctrineMigrationsBundle)
-* [doctrine-fixtures-bundle](https://github.com/doctrine/DoctrineFixturesBundle)
-* [command-scheduler-bundle](https://packagist.org/packages/dukecity/command-scheduler-bundle)
-* [phpunit](https://github.com/sebastianbergmann/phpunit)
-* [phpunit-bridge](https://github.com/symfony/phpunit-bridge)
-* [browser-kit](https://github.com/symfony/browser-kit)
-* [css-selector](https://github.com/symfony/css-selector)
-* [security-checker](https://github.com/fabpot/local-php-security-checker)
-* [messenger](https://symfony.com/doc/current/messenger.html)
-* [composer-bin-plugin](https://github.com/bamarni/composer-bin-plugin)
-* [composer-normalize](https://github.com/ergebnis/composer-normalize)
-* [composer-unused](https://packagist.org/packages/icanhazstring/composer-unused)
-* [composer-require-checker](https://packagist.org/packages/maglnet/composer-require-checker)
-* [requirements-checker](https://github.com/symfony/requirements-checker)
-* [security-advisories](https://github.com/Roave/SecurityAdvisories)
-* [php-coveralls](https://github.com/php-coveralls/php-coveralls)
-* [easy-coding-standard](https://github.com/Symplify/EasyCodingStandard)
-* [PhpMetrics](https://github.com/phpmetrics/PhpMetrics)
-* [phpcpd](https://packagist.org/packages/systemsdk/phpcpd)
-* [phpmd](https://packagist.org/packages/phpmd/phpmd)
-* [phpstan](https://packagist.org/packages/phpstan/phpstan)
-* [phpinsights](https://packagist.org/packages/nunomaduro/phpinsights)
-* [rector](https://packagist.org/packages/rector/rector)
-
-## Guidelines
-* [Commands](docs/commands.md)
-* [Development](docs/development.md)
-* [IDE PhpStorm Configuration](docs/phpstorm.md)
-* [Xdebug Configuration](docs/xdebug.md)
-* [Messenger Component](docs/messenger.md)
-* [Code Quality Tools](docs/code-quality.md)
-* [Testing](docs/testing.md)
-
-## Development Workflow
-1. **Branching:** Create a new branch from `develop` using one of the following patterns:
-    * `feature/{ticketNo}`
-    * `bugfix/{ticketNo}`
-2. **Commits:** Commit frequently and write clear, descriptive commit messages to facilitate the review process.
-3. **Pull Request:** Push your branch to the repository and open a Pull Request (PR) against the `develop` branch. Use the following naming convention for your PR: `feature/{ticketNo} - Short descriptive title of the Jira task`.
-4. **Review:** Address any feedback from reviewers and iterate as needed.
-5. **CI/CD Checks:** Ensure that all continuous integration checks (e.g., CircleCI) pass successfully and the build status is green.
-6. **Merge:** Once approved, your PR will be squashed and merged into `develop`. It will later be merged into a `release/{version}` branch for deployment.
-
-Note: For a detailed visual guide on this branching model, please refer to the [Git Flow Cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet).
-
-## License
-[The MIT License (MIT)](LICENSE)
+- The amount tolerance is 0.05 for every currency, as in the brief; differences of 0.01–0.05 count as matched.
+- A settlement without a reference for an order that already has a settlement is reported as `missing_in_database`,
+  not as a duplicate.
+- A header with quoted column names after a UTF-8 BOM is not recognized (a plain Excel BOM is).
+- An output directory that exists but is not writable fails with a PHP warning instead of a short message.
+- Runs are not idempotent: each run writes a new timestamped folder.

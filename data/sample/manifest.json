@@ -1,0 +1,14 @@
+{
+    "seed": 42,
+    "orders": 1000,
+    "expected": {
+        "matched_exact": 887,
+        "matched_fuzzy": 8,
+        "duplicate_rows": 1,
+        "missing_in_settlement": 56,
+        "missing_in_database": 30,
+        "amount_mismatch": 21,
+        "status_mismatch": 8,
+        "duplicate_settlement": 7
+    }
+}

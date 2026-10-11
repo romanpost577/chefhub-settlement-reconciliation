@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ChefHub reconciliation{% endblock %}
+
+{% block stylesheets %}
+    <style>
+        body { font-family: system-ui, sans-serif; margin: 24px; color: #1f2933; }
+        table { border-collapse: collapse; margin: 8px 0 24px; font-size: 14px; }
+        th, td { border: 1px solid #d9dee3; padding: 4px 8px; text-align: left; vertical-align: top; }
+        th { background: #f3f5f7; }
+        td.num { text-align: right; font-variant-numeric: tabular-nums; }
+        .cards { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; }
+        .card { border: 1px solid #d9dee3; border-radius: 6px; padding: 10px 14px; min-width: 150px; }
+        .card b { display: block; font-size: 22px; }
+        .high { color: #b42318; font-weight: 600; }
+        .medium { color: #b54708; }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1>ChefHub settlement reconciliation</h1>
+
+    {% if report is null %}
+        <p>No report found. Generate one with:</p>
+        <pre>make exec cmd="php bin/console app:reconcile"</pre>
+    {% else %}
+        {% set summary = report.summary %}
+        <p>Generated {{ report.meta.generated_at }} in {{ report.meta.duration_ms }} ms.</p>
+
+        <div class="cards">
+            <div class="card">Internal orders<b>{{ summary.internal_orders }}</b></div>
+            <div class="card">Matched (exact)<b>{{ summary.matched_exact }}</b></div>
+            <div class="card">Matched (fuzzy)<b>{{ summary.matched_fuzzy }}</b></div>
+            <div class="card">Discrepancies<b>{{ summary.total_discrepancies }}</b></div>
+            <div class="card">Exposure (USD)<b>{{ summary.total_exposure_usd|number_format(2) }}</b></div>
+        </div>
+
+        <h2>Discrepancies by type</h2>
+        <table>
+            <tr><th>Type</th><th>Count</th><th>Exposure by currency</th><th>Exposure (USD)</th></tr>
+            {% for type, item in summary.by_type %}
+                <tr>
+                    <td><a href="{{ path('reconciliation_report', {type: type}) }}">{{ type }}</a></td>
+                    <td class="num">{{ item.count }}</td>
+                    <td>{% for currency, amount in item.exposure_by_currency %}{{ currency }} {{ amount }}{% if not loop.last %}, {% endif %}{% endfor %}</td>
+                    <td class="num">{{ item.exposure_usd|number_format(2) }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Chef payouts (top {{ chefPayouts|length }} by amount on hold)</h2>
+        <table>
+            <tr><th>Chef</th><th>Currency</th><th>Settled gross</th><th>Commission</th><th>Payable now</th><th>On hold</th><th>Discrepancies</th></tr>
+            {% for payout in chefPayouts %}
+                <tr>
+                    <td>{{ payout.chef_id }}</td>
+                    <td>{{ payout.currency }}</td>
+                    <td class="num">{{ payout.settled_gross }}</td>
+                    <td class="num">{{ payout.commission }}</td>
+                    <td class="num">{{ payout.payable_now }}</td>
+                    <td class="num">{{ payout.on_hold }}</td>
+                    <td class="num">{{ payout.discrepancy_count }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Discrepancies{% if activeType %}: {{ activeType }}{% endif %}</h2>
+        <p>
+            Showing {{ discrepancies|length }} of {{ discrepancyTotal }}, highest USD impact first.
+            {% if activeType %}<a href="{{ path('reconciliation_report') }}">Show all types</a>{% endif %}
+        </p>
+        <table id="discrepancies">
+            <tr>
+                <th>Priority</th><th>Type</th><th>Order</th><th>Settlement</th><th>Customer</th><th>Chef</th>
+                <th>Currency</th><th>Ordered</th><th>Settled</th><th>Impact</th><th>Impact (USD)</th><th>Match</th><th>Note</th>
+            </tr>
+            {% for row in discrepancies %}
+                <tr>
+                    <td class="{{ row.priority }}">{{ row.priority }}</td>
+                    <td>{{ row.type }}</td>
+                    <td>{{ row.order_id ?? '—' }}</td>
+                    <td>{{ row.settlement_source ?? '—' }} {{ row.settlement_id ?? '' }}</td>
+                    <td>{{ row.customer_id ?? '—' }}</td>
+                    <td>{{ row.chef_id ?? '—' }}</td>
+                    <td>{{ row.currency }}</td>
+                    <td class="num">{{ row.order_amount ?? '—' }}</td>
+                    <td class="num">{{ row.settled_amount ?? '—' }}</td>
+                    <td class="num">{{ row.impact }}</td>
+                    <td class="num">{{ row.impact_usd|number_format(2) }}</td>
+                    <td>{{ row.match_kind ?? '—' }}</td>
+                    <td>{{ row.note }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        {% if report.warnings is not empty %}
+            <h2>Warnings ({{ report.warnings|length }})</h2>
+            <ul>
+                {% for warning in report.warnings|slice(0, 50) %}
+                    <li>{{ warning }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endif %}
+{% endblock %}

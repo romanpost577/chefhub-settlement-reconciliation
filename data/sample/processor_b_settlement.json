@@ -1,0 +1,4387 @@
+{
+    "provider": "GoWallet",
+    "report_period": {
+        "from": "2026-10-01",
+        "to": "2026-10-07"
+    },
+    "transactions": [
+        {
+            "payment_reference": "GW-00000428",
+            "merchant": {
+                "order_ref": "CH-000457"
+            },
+            "payer_id": "CU-00126",
+            "total": "468.99",
+            "ccy": "THB",
+            "timestamp": 1791088703,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000068",
+            "merchant": {
+                "order_ref": "CH-000071"
+            },
+            "payer_id": "CU-00097",
+            "total": "3196.66",
+            "ccy": "PHP",
+            "timestamp": 1790855250,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000391",
+            "merchant": {
+                "order_ref": "CH-000418"
+            },
+            "payer_id": "CU-00065",
+            "total": "3169.72",
+            "ccy": "PHP",
+            "timestamp": 1791065017,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000211",
+            "merchant": {
+                "order_ref": "CH-000227"
+            },
+            "payer_id": "CU-00177",
+            "total": "3387.00",
+            "ccy": "PHP",
+            "timestamp": 1790949450,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000676",
+            "merchant": {
+                "order_ref": "CH-000722"
+            },
+            "payer_id": "CU-00078",
+            "total": "789.98",
+            "ccy": "THB",
+            "timestamp": 1791248821,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000333",
+            "merchant": {
+                "order_ref": "CH-000355"
+            },
+            "payer_id": "CU-00134",
+            "total": "764.68",
+            "ccy": "THB",
+            "timestamp": 1791027208,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000751",
+            "merchant": {
+                "order_ref": "CH-000805"
+            },
+            "payer_id": "CU-00191",
+            "total": "90929.05",
+            "ccy": "IDR",
+            "timestamp": 1791298528,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000677",
+            "merchant": {
+                "order_ref": "CH-000723"
+            },
+            "payer_id": "CU-00146",
+            "total": "1984.73",
+            "ccy": "PHP",
+            "timestamp": 1791249260,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000829",
+            "merchant": {
+                "order_ref": "CH-000887"
+            },
+            "payer_id": "CU-00136",
+            "total": "1936.27",
+            "ccy": "THB",
+            "timestamp": 1791348172,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000633",
+            "merchant": {
+                "order_ref": "CH-000675"
+            },
+            "payer_id": "CU-00157",
+            "total": "582386.27",
+            "ccy": "IDR",
+            "timestamp": 1791220346,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000074",
+            "merchant": {
+                "order_ref": "CH-000077"
+            },
+            "payer_id": "CU-00190",
+            "total": "31827.02",
+            "ccy": "IDR",
+            "timestamp": 1790859047,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000496",
+            "merchant": {
+                "order_ref": "CH-000529"
+            },
+            "payer_id": "CU-00109",
+            "total": "382.05",
+            "ccy": "THB",
+            "timestamp": 1791131815,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000622",
+            "merchant": {
+                "order_ref": "CH-000664"
+            },
+            "payer_id": "CU-00006",
+            "total": "336547.02",
+            "ccy": "IDR",
+            "timestamp": 1791213585,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000652",
+            "merchant": {
+                "order_ref": "CH-000695"
+            },
+            "payer_id": "CU-00064",
+            "total": "1914.67",
+            "ccy": "THB",
+            "timestamp": 1791232564,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000660",
+            "merchant": {
+                "order_ref": "CH-000703"
+            },
+            "payer_id": "CU-00070",
+            "total": "438.70",
+            "ccy": "PHP",
+            "timestamp": 1791236892,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000861",
+            "merchant": {
+                "order_ref": "CH-000923"
+            },
+            "payer_id": "CU-00126",
+            "total": "1901.04",
+            "ccy": "THB",
+            "timestamp": 1791369954,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000527",
+            "merchant": {
+                "order_ref": "CH-000562"
+            },
+            "payer_id": "CU-00065",
+            "total": "1419.17",
+            "ccy": "THB",
+            "timestamp": 1791152069,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000347",
+            "merchant": {
+                "order_ref": "CH-000370"
+            },
+            "payer_id": "CU-00170",
+            "total": "56462.18",
+            "ccy": "IDR",
+            "timestamp": 1791035893,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000406",
+            "merchant": {
+                "order_ref": "CH-000433"
+            },
+            "payer_id": "CU-00006",
+            "total": "132.43",
+            "ccy": "THB",
+            "timestamp": 1791074194,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000937",
+            "merchant": {
+                "order_ref": "CH-900006"
+            },
+            "payer_id": "CU-P0006",
+            "total": "127045.29",
+            "ccy": "IDR",
+            "timestamp": 1791402322,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000797",
+            "merchant": {
+                "order_ref": "CH-000854"
+            },
+            "payer_id": "CU-00196",
+            "total": "1727.81",
+            "ccy": "PHP",
+            "timestamp": 1791328540,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000322",
+            "merchant": {
+                "order_ref": "CH-000344"
+            },
+            "payer_id": "CU-00194",
+            "total": "266892.31",
+            "ccy": "IDR",
+            "timestamp": 1791020400,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000213",
+            "merchant": {
+                "order_ref": "CH-000229"
+            },
+            "payer_id": "CU-00051",
+            "total": "468670.59",
+            "ccy": "IDR",
+            "timestamp": 1790950783,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000467",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00096",
+            "total": "1822.67",
+            "ccy": "THB",
+            "timestamp": 1791113238,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000763",
+            "merchant": {
+                "order_ref": "CH-000819"
+            },
+            "payer_id": "CU-00189",
+            "total": "415731.01",
+            "ccy": "IDR",
+            "timestamp": 1791307326,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000944",
+            "merchant": {
+                "order_ref": "CH-900013"
+            },
+            "payer_id": "CU-P0013",
+            "total": "236.24",
+            "ccy": "THB",
+            "timestamp": 1790838406,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000422",
+            "merchant": {
+                "order_ref": "CH-000451"
+            },
+            "payer_id": "CU-00051",
+            "total": "50600.76",
+            "ccy": "IDR",
+            "timestamp": 1791085031,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000292",
+            "merchant": {
+                "order_ref": "CH-000312"
+            },
+            "payer_id": "CU-00027",
+            "total": "1526.83",
+            "ccy": "THB",
+            "timestamp": 1791001115,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000117",
+            "merchant": {
+                "order_ref": "CH-000122"
+            },
+            "payer_id": "CU-00138",
+            "total": "1374.63",
+            "ccy": "THB",
+            "timestamp": 1790886360,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000700",
+            "merchant": {
+                "order_ref": "CH-000748"
+            },
+            "payer_id": "CU-00166",
+            "total": "1256.28",
+            "ccy": "THB",
+            "timestamp": 1791264453,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000452",
+            "merchant": {
+                "order_ref": "CH-000481"
+            },
+            "payer_id": "CU-00196",
+            "total": "507015.97",
+            "ccy": "IDR",
+            "timestamp": 1791102726,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000047",
+            "merchant": {
+                "order_ref": "CH-000050"
+            },
+            "payer_id": "CU-00027",
+            "total": "1579.92",
+            "ccy": "THB",
+            "timestamp": 1790842527,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000943",
+            "merchant": {
+                "order_ref": "CH-900012"
+            },
+            "payer_id": "CU-P0012",
+            "total": "618.48",
+            "ccy": "THB",
+            "timestamp": 1790861242,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000699",
+            "merchant": {
+                "order_ref": "CH-000747"
+            },
+            "payer_id": "CU-00030",
+            "total": "1790.95",
+            "ccy": "THB",
+            "timestamp": 1791263970,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000517",
+            "merchant": {
+                "order_ref": "CH-000552"
+            },
+            "payer_id": "CU-00129",
+            "total": "94889.70",
+            "ccy": "IDR",
+            "timestamp": 1791146027,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000582",
+            "merchant": {
+                "order_ref": "CH-000619"
+            },
+            "payer_id": "CU-00122",
+            "total": "1570.54",
+            "ccy": "THB",
+            "timestamp": 1791186641,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000487",
+            "merchant": {
+                "order_ref": "CH-000519"
+            },
+            "payer_id": "CU-00143",
+            "total": "487993.43",
+            "ccy": "IDR",
+            "timestamp": 1791126021,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000095",
+            "merchant": {
+                "order_ref": "CH-000100"
+            },
+            "payer_id": "CU-00100",
+            "total": "159447.44",
+            "ccy": "IDR",
+            "timestamp": 1790873051,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000281",
+            "merchant": {
+                "order_ref": "CH-000301"
+            },
+            "payer_id": "CU-00043",
+            "total": "594.99",
+            "ccy": "PHP",
+            "timestamp": 1790994492,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000465",
+            "merchant": {
+                "order_ref": "CH-000496"
+            },
+            "payer_id": "CU-00193",
+            "total": "848.05",
+            "ccy": "THB",
+            "timestamp": 1791112244,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000602",
+            "merchant": {
+                "order_ref": "CH-000640"
+            },
+            "payer_id": "CU-00082",
+            "total": "1030.73",
+            "ccy": "THB",
+            "timestamp": 1791198933,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000436",
+            "merchant": {
+                "order_ref": "CH-000466"
+            },
+            "payer_id": "CU-00127",
+            "total": "685.57",
+            "ccy": "PHP",
+            "timestamp": 1791093679,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000669",
+            "merchant": {
+                "order_ref": "CH-000712"
+            },
+            "payer_id": "CU-00104",
+            "total": "507117.29",
+            "ccy": "IDR",
+            "timestamp": 1791242626,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000732",
+            "merchant": {
+                "order_ref": "CH-000783"
+            },
+            "payer_id": "CU-00022",
+            "total": "582003.53",
+            "ccy": "IDR",
+            "timestamp": 1791285561,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000601",
+            "merchant": {
+                "order_ref": "CH-000639"
+            },
+            "payer_id": "CU-00140",
+            "total": "284.63",
+            "ccy": "PHP",
+            "timestamp": 1791198341,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000870",
+            "merchant": {
+                "order_ref": "CH-000932"
+            },
+            "payer_id": "CU-00157",
+            "total": "1933.46",
+            "ccy": "THB",
+            "timestamp": 1791375690,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000878",
+            "merchant": {
+                "order_ref": "CH-000942"
+            },
+            "payer_id": "CU-00192",
+            "total": "126617.49",
+            "ccy": "IDR",
+            "timestamp": 1791381739,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000682",
+            "merchant": {
+                "order_ref": "CH-000728"
+            },
+            "payer_id": "CU-00095",
+            "total": "135.84",
+            "ccy": "THB",
+            "timestamp": 1791252407,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000097",
+            "merchant": {
+                "order_ref": "CH-000102"
+            },
+            "payer_id": "CU-00045",
+            "total": "55435.31",
+            "ccy": "IDR",
+            "timestamp": 1790874084,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000784",
+            "merchant": {
+                "order_ref": "CH-000841"
+            },
+            "payer_id": "CU-00063",
+            "total": "768.28",
+            "ccy": "PHP",
+            "timestamp": 1791320205,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000382",
+            "merchant": {
+                "order_ref": "CH-000407"
+            },
+            "payer_id": "CU-00129",
+            "total": "2508.40",
+            "ccy": "PHP",
+            "timestamp": 1791058293,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000022",
+            "merchant": {
+                "order_ref": "CH-000025"
+            },
+            "payer_id": "CU-00127",
+            "total": "1593.22",
+            "ccy": "THB",
+            "timestamp": 1790827598,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000081",
+            "merchant": {
+                "order_ref": "CH-000085"
+            },
+            "payer_id": "CU-00024",
+            "total": "180904.50",
+            "ccy": "IDR",
+            "timestamp": 1790863622,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000933",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-P0002",
+            "total": "2978.17",
+            "ccy": "PHP",
+            "timestamp": 1791029044,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000650",
+            "merchant": {
+                "order_ref": "CH-000693"
+            },
+            "payer_id": "CU-00063",
+            "total": "64654.17",
+            "ccy": "IDR",
+            "timestamp": 1791231008,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000653",
+            "merchant": {
+                "order_ref": "CH-000696"
+            },
+            "payer_id": "CU-00062",
+            "total": "1197.37",
+            "ccy": "THB",
+            "timestamp": 1791232842,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000729",
+            "merchant": {
+                "order_ref": "CH-000780"
+            },
+            "payer_id": "CU-00176",
+            "total": "1472.06",
+            "ccy": "PHP",
+            "timestamp": 1791283647,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000111",
+            "merchant": {
+                "order_ref": "CH-000116"
+            },
+            "payer_id": "CU-00067",
+            "total": "690.89",
+            "ccy": "PHP",
+            "timestamp": 1790882840,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000801",
+            "merchant": {
+                "order_ref": "CH-000858"
+            },
+            "payer_id": "CU-00152",
+            "total": "1971.89",
+            "ccy": "PHP",
+            "timestamp": 1791330876,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000441",
+            "merchant": {
+                "order_ref": "CH-000471"
+            },
+            "payer_id": "CU-00140",
+            "total": "1814.78",
+            "ccy": "PHP",
+            "timestamp": 1791096811,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000880",
+            "merchant": {
+                "order_ref": "CH-000944"
+            },
+            "payer_id": "CU-00170",
+            "total": "1109.99",
+            "ccy": "THB",
+            "timestamp": 1791382767,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000278",
+            "merchant": {
+                "order_ref": "CH-000298"
+            },
+            "payer_id": "CU-00196",
+            "total": "311015.54",
+            "ccy": "IDR",
+            "timestamp": 1790992481,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000477",
+            "merchant": {
+                "order_ref": "CH-000510"
+            },
+            "payer_id": "CU-00118",
+            "total": "1445.72",
+            "ccy": "PHP",
+            "timestamp": 1791120660,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000960",
+            "merchant": {
+                "order_ref": "CH-900029"
+            },
+            "payer_id": "CU-P0029",
+            "total": "2790.10",
+            "ccy": "PHP",
+            "timestamp": 1791364985,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000464",
+            "merchant": {
+                "order_ref": "CH-000494"
+            },
+            "payer_id": "CU-00017",
+            "total": "3372.74",
+            "ccy": "PHP",
+            "timestamp": 1791110934,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000798",
+            "merchant": {
+                "order_ref": "CH-000855"
+            },
+            "payer_id": "CU-00183",
+            "total": "1096.56",
+            "ccy": "THB",
+            "timestamp": 1791329019,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000839",
+            "merchant": {
+                "order_ref": "CH-000899"
+            },
+            "payer_id": "CU-00058",
+            "total": "678.39",
+            "ccy": "THB",
+            "timestamp": 1791355356,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000489",
+            "merchant": {
+                "order_ref": "CH-000522"
+            },
+            "payer_id": "CU-00019",
+            "total": "1046.67",
+            "ccy": "THB",
+            "timestamp": 1791128062,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000390",
+            "merchant": {
+                "order_ref": "CH-000417"
+            },
+            "payer_id": "CU-00173",
+            "total": "538458.04",
+            "ccy": "IDR",
+            "timestamp": 1791064113,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000953",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-P0022",
+            "total": "494480.31",
+            "ccy": "IDR",
+            "timestamp": 1791179886,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000234",
+            "merchant": {
+                "order_ref": "CH-000250"
+            },
+            "payer_id": "CU-00054",
+            "total": "35201.54",
+            "ccy": "IDR",
+            "timestamp": 1790963501,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000774",
+            "merchant": {
+                "order_ref": "CH-000831"
+            },
+            "payer_id": "CU-00117",
+            "total": "186091.06",
+            "ccy": "IDR",
+            "timestamp": 1791314280,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000949",
+            "merchant": {
+                "order_ref": "CH-900018"
+            },
+            "payer_id": "CU-P0018",
+            "total": "443.50",
+            "ccy": "THB",
+            "timestamp": 1790865336,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000320",
+            "merchant": {
+                "order_ref": "CH-000342"
+            },
+            "payer_id": "CU-00082",
+            "total": "3213.74",
+            "ccy": "PHP",
+            "timestamp": 1791018908,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000771",
+            "merchant": {
+                "order_ref": "CH-000827"
+            },
+            "payer_id": "CU-00180",
+            "total": "118587.06",
+            "ccy": "IDR",
+            "timestamp": 1791312012,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000780",
+            "merchant": {
+                "order_ref": "CH-000837"
+            },
+            "payer_id": "CU-00048",
+            "total": "180844.97",
+            "ccy": "IDR",
+            "timestamp": 1791318163,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000741",
+            "merchant": {
+                "order_ref": "CH-000793"
+            },
+            "payer_id": "CU-00149",
+            "total": "116103.71",
+            "ccy": "IDR",
+            "timestamp": 1791291698,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000165",
+            "merchant": {
+                "order_ref": "CH-000175"
+            },
+            "payer_id": "CU-00130",
+            "total": "1638.73",
+            "ccy": "PHP",
+            "timestamp": 1790918450,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000217",
+            "merchant": {
+                "order_ref": "CH-000233"
+            },
+            "payer_id": "CU-00107",
+            "total": "1229.15",
+            "ccy": "THB",
+            "timestamp": 1790953275,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000629",
+            "merchant": {
+                "order_ref": "CH-000671"
+            },
+            "payer_id": "CU-00151",
+            "total": "245712.59",
+            "ccy": "IDR",
+            "timestamp": 1791217697,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000225",
+            "merchant": {
+                "order_ref": "CH-000241"
+            },
+            "payer_id": "CU-00111",
+            "total": "471648.07",
+            "ccy": "IDR",
+            "timestamp": 1790957783,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000620",
+            "merchant": {
+                "order_ref": "CH-000662"
+            },
+            "payer_id": "CU-00101",
+            "total": "244469.86",
+            "ccy": "IDR",
+            "timestamp": 1791212391,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000694",
+            "merchant": {
+                "order_ref": "CH-000742"
+            },
+            "payer_id": "CU-00175",
+            "total": "448281.39",
+            "ccy": "IDR",
+            "timestamp": 1791260553,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000044",
+            "merchant": {
+                "order_ref": "CH-000047"
+            },
+            "payer_id": "CU-00040",
+            "total": "399.12",
+            "ccy": "THB",
+            "timestamp": 1790840727,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000160",
+            "merchant": {
+                "order_ref": "CH-000170"
+            },
+            "payer_id": "CU-00191",
+            "total": "284.71",
+            "ccy": "THB",
+            "timestamp": 1790915382,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000310",
+            "merchant": {
+                "order_ref": "CH-000332"
+            },
+            "payer_id": "CU-00021",
+            "total": "2282.89",
+            "ccy": "PHP",
+            "timestamp": 1791013073,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000850",
+            "merchant": {
+                "order_ref": "CH-000912"
+            },
+            "payer_id": "CU-00105",
+            "total": "320201.20",
+            "ccy": "IDR",
+            "timestamp": 1791363397,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000040",
+            "merchant": {
+                "order_ref": "CH-000043"
+            },
+            "payer_id": "CU-00177",
+            "total": "737.26",
+            "ccy": "PHP",
+            "timestamp": 1790838228,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000242",
+            "merchant": {
+                "order_ref": "CH-000258"
+            },
+            "payer_id": "CU-00176",
+            "total": "259.15",
+            "ccy": "THB",
+            "timestamp": 1790968106,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000530",
+            "merchant": {
+                "order_ref": "CH-000565"
+            },
+            "payer_id": "CU-00122",
+            "total": "122280.69",
+            "ccy": "IDR",
+            "timestamp": 1791154014,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000346",
+            "merchant": {
+                "order_ref": "CH-000369"
+            },
+            "payer_id": "CU-00166",
+            "total": "301604.62",
+            "ccy": "IDR",
+            "timestamp": 1791035080,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000240",
+            "merchant": {
+                "order_ref": "CH-000256"
+            },
+            "payer_id": "CU-00135",
+            "total": "572715.93",
+            "ccy": "IDR",
+            "timestamp": 1790967285,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000139",
+            "merchant": {
+                "order_ref": "CH-000146"
+            },
+            "payer_id": "CU-00195",
+            "total": "1100.56",
+            "ccy": "PHP",
+            "timestamp": 1790900901,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000639",
+            "merchant": {
+                "order_ref": "CH-000682"
+            },
+            "payer_id": "CU-00171",
+            "total": "83113.57",
+            "ccy": "IDR",
+            "timestamp": 1791224637,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000590",
+            "merchant": {
+                "order_ref": "CH-000628"
+            },
+            "payer_id": "CU-00154",
+            "total": "2558.73",
+            "ccy": "PHP",
+            "timestamp": 1791191716,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000143",
+            "merchant": {
+                "order_ref": "CH-000151"
+            },
+            "payer_id": "CU-00098",
+            "total": "1588.17",
+            "ccy": "PHP",
+            "timestamp": 1790903917,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000299",
+            "merchant": {
+                "order_ref": "CH-000321"
+            },
+            "payer_id": "CU-00156",
+            "total": "580242.78",
+            "ccy": "IDR",
+            "timestamp": 1791006172,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000221",
+            "merchant": {
+                "order_ref": "CH-000237"
+            },
+            "payer_id": "CU-00166",
+            "total": "75213.65",
+            "ccy": "IDR",
+            "timestamp": 1790955816,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000156",
+            "merchant": {
+                "order_ref": "CH-000166"
+            },
+            "payer_id": "CU-00166",
+            "total": "329827.83",
+            "ccy": "IDR",
+            "timestamp": 1790912750,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000182",
+            "merchant": {
+                "order_ref": "CH-000195"
+            },
+            "payer_id": "CU-00183",
+            "total": "437.30",
+            "ccy": "PHP",
+            "timestamp": 1790930340,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000457",
+            "merchant": {
+                "order_ref": "CH-000486"
+            },
+            "payer_id": "CU-00091",
+            "total": "1438.71",
+            "ccy": "THB",
+            "timestamp": 1791105952,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000714",
+            "merchant": {
+                "order_ref": "CH-000763"
+            },
+            "payer_id": "CU-00142",
+            "total": "1156.41",
+            "ccy": "PHP",
+            "timestamp": 1791273102,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000394",
+            "merchant": {
+                "order_ref": "CH-000421"
+            },
+            "payer_id": "CU-00186",
+            "total": "908.12",
+            "ccy": "THB",
+            "timestamp": 1791066629,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000257",
+            "merchant": {
+                "order_ref": "CH-000275"
+            },
+            "payer_id": "CU-00178",
+            "total": "545539.48",
+            "ccy": "IDR",
+            "timestamp": 1790978527,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000021",
+            "merchant": {
+                "order_ref": "CH-000023"
+            },
+            "payer_id": "CU-00026",
+            "total": "385474.93",
+            "ccy": "IDR",
+            "timestamp": 1790826345,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000592",
+            "merchant": {
+                "order_ref": "CH-000630"
+            },
+            "payer_id": "CU-00089",
+            "total": "379.28",
+            "ccy": "THB",
+            "timestamp": 1791192886,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000270",
+            "merchant": {
+                "order_ref": "CH-000289"
+            },
+            "payer_id": "CU-00047",
+            "total": "236809.55",
+            "ccy": "IDR",
+            "timestamp": 1790986877,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000865",
+            "merchant": {
+                "order_ref": "CH-000927"
+            },
+            "payer_id": "CU-00148",
+            "total": "284962.06",
+            "ccy": "IDR",
+            "timestamp": 1791372217,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000072",
+            "merchant": {
+                "order_ref": "CH-000075"
+            },
+            "payer_id": "CU-00186",
+            "total": "538806.11",
+            "ccy": "IDR",
+            "timestamp": 1790857907,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000619",
+            "merchant": {
+                "order_ref": "CH-000661"
+            },
+            "payer_id": "CU-00116",
+            "total": "1112.92",
+            "ccy": "THB",
+            "timestamp": 1791211483,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000879",
+            "merchant": {
+                "order_ref": "CH-000943"
+            },
+            "payer_id": "CU-00134",
+            "total": "1067.40",
+            "ccy": "PHP",
+            "timestamp": 1791382194,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000469",
+            "merchant": {
+                "order_ref": "CH-000500"
+            },
+            "payer_id": "CU-00174",
+            "total": "493415.04",
+            "ccy": "IDR",
+            "timestamp": 1791114378,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000705",
+            "merchant": {
+                "order_ref": "CH-000753"
+            },
+            "payer_id": "CU-00049",
+            "total": "37124.45",
+            "ccy": "IDR",
+            "timestamp": 1791267220,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000519",
+            "merchant": {
+                "order_ref": "CH-000554"
+            },
+            "payer_id": "CU-00039",
+            "total": "557.42",
+            "ccy": "THB",
+            "timestamp": 1791147360,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000730",
+            "merchant": {
+                "order_ref": "CH-000781"
+            },
+            "payer_id": "CU-00115",
+            "total": "321204.82",
+            "ccy": "IDR",
+            "timestamp": 1791283970,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000158",
+            "merchant": {
+                "order_ref": "CH-000168"
+            },
+            "payer_id": "CU-00013",
+            "total": "102123.40",
+            "ccy": "IDR",
+            "timestamp": 1790913910,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000552",
+            "merchant": {
+                "order_ref": "CH-000588"
+            },
+            "payer_id": "CU-00184",
+            "total": "3152.80",
+            "ccy": "PHP",
+            "timestamp": 1791167358,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000492",
+            "merchant": {
+                "order_ref": "CH-000525"
+            },
+            "payer_id": "CU-00160",
+            "total": "178639.68",
+            "ccy": "IDR",
+            "timestamp": 1791129336,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000673",
+            "merchant": {
+                "order_ref": "CH-000718"
+            },
+            "payer_id": "CU-00057",
+            "total": "359146.50",
+            "ccy": "IDR",
+            "timestamp": 1791245907,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000494",
+            "merchant": {
+                "order_ref": "CH-000527"
+            },
+            "payer_id": "CU-00156",
+            "total": "217931.87",
+            "ccy": "IDR",
+            "timestamp": 1791131056,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000418",
+            "merchant": {
+                "order_ref": "CH-000446"
+            },
+            "payer_id": "CU-00029",
+            "total": "1013.01",
+            "ccy": "PHP",
+            "timestamp": 1791083033,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000408",
+            "merchant": {
+                "order_ref": "CH-000435"
+            },
+            "payer_id": "CU-00002",
+            "total": "575617.05",
+            "ccy": "IDR",
+            "timestamp": 1791075262,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000082",
+            "merchant": {
+                "order_ref": "CH-000086"
+            },
+            "payer_id": "CU-00040",
+            "total": "1710.84",
+            "ccy": "PHP",
+            "timestamp": 1790864157,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000656",
+            "merchant": {
+                "order_ref": "CH-000699"
+            },
+            "payer_id": "CU-00012",
+            "total": "2078.46",
+            "ccy": "PHP",
+            "timestamp": 1791234717,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000739",
+            "merchant": {
+                "order_ref": "CH-000791"
+            },
+            "payer_id": "CU-00012",
+            "total": "2076.16",
+            "ccy": "PHP",
+            "timestamp": 1791289974,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000876",
+            "merchant": {
+                "order_ref": "CH-000940"
+            },
+            "payer_id": "CU-00055",
+            "total": "166.84",
+            "ccy": "THB",
+            "timestamp": 1791380007,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000161",
+            "merchant": {
+                "order_ref": "CH-000171"
+            },
+            "payer_id": "CU-00085",
+            "total": "365518.41",
+            "ccy": "IDR",
+            "timestamp": 1790915745,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000228",
+            "merchant": {
+                "order_ref": "CH-000244"
+            },
+            "payer_id": "CU-00010",
+            "total": "1273.92",
+            "ccy": "THB",
+            "timestamp": 1790959665,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000623",
+            "merchant": {
+                "order_ref": "CH-000665"
+            },
+            "payer_id": "CU-00111",
+            "total": "3369.98",
+            "ccy": "PHP",
+            "timestamp": 1791214445,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000952",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-P0021",
+            "total": "747.04",
+            "ccy": "THB",
+            "timestamp": 1790972716,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000666",
+            "merchant": {
+                "order_ref": "CH-000710"
+            },
+            "payer_id": "CU-00088",
+            "total": "519154.71",
+            "ccy": "IDR",
+            "timestamp": 1791241269,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000035",
+            "merchant": {
+                "order_ref": "CH-000038"
+            },
+            "payer_id": "CU-00088",
+            "total": "181130.02",
+            "ccy": "IDR",
+            "timestamp": 1790835708,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000434",
+            "merchant": {
+                "order_ref": "CH-000464"
+            },
+            "payer_id": "CU-00140",
+            "total": "154.17",
+            "ccy": "THB",
+            "timestamp": 1791092738,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000212",
+            "merchant": {
+                "order_ref": "CH-000228"
+            },
+            "payer_id": "CU-00052",
+            "total": "2392.82",
+            "ccy": "PHP",
+            "timestamp": 1790950451,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000500",
+            "merchant": {
+                "order_ref": "CH-000534"
+            },
+            "payer_id": "CU-00088",
+            "total": "1822.33",
+            "ccy": "PHP",
+            "timestamp": 1791135064,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000735",
+            "merchant": {
+                "order_ref": "CH-000786"
+            },
+            "payer_id": "CU-00061",
+            "total": "48571.04",
+            "ccy": "IDR",
+            "timestamp": 1791286967,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000177",
+            "merchant": {
+                "order_ref": "CH-000189"
+            },
+            "payer_id": "CU-00137",
+            "total": "227826.37",
+            "ccy": "IDR",
+            "timestamp": 1790926798,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000836",
+            "merchant": {
+                "order_ref": "CH-000896"
+            },
+            "payer_id": "CU-00050",
+            "total": "605.99",
+            "ccy": "PHP",
+            "timestamp": 1791353786,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000611",
+            "merchant": {
+                "order_ref": "CH-000650"
+            },
+            "payer_id": "CU-00176",
+            "total": "383404.19",
+            "ccy": "IDR",
+            "timestamp": 1791204868,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000695",
+            "merchant": {
+                "order_ref": "CH-000743"
+            },
+            "payer_id": "CU-00057",
+            "total": "129171.65",
+            "ccy": "IDR",
+            "timestamp": 1791261235,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000550",
+            "merchant": {
+                "order_ref": "ch586"
+            },
+            "payer_id": "CU-00145",
+            "total": "677.35",
+            "ccy": "THB",
+            "timestamp": 1791166690,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000696",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00125",
+            "total": "3143.80",
+            "ccy": "PHP",
+            "timestamp": 1791262144,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000442",
+            "merchant": {
+                "order_ref": "CH-000472"
+            },
+            "payer_id": "CU-00106",
+            "total": "110.64",
+            "ccy": "THB",
+            "timestamp": 1791097747,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000011",
+            "merchant": {
+                "order_ref": "CH-000013"
+            },
+            "payer_id": "CU-00071",
+            "total": "1027.12",
+            "ccy": "THB",
+            "timestamp": 1790820065,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000288",
+            "merchant": {
+                "order_ref": "CH-000308"
+            },
+            "payer_id": "CU-00150",
+            "total": "250693.40",
+            "ccy": "IDR",
+            "timestamp": 1790998658,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000354",
+            "merchant": {
+                "order_ref": "CH-000378"
+            },
+            "payer_id": "CU-00169",
+            "total": "1662.07",
+            "ccy": "PHP",
+            "timestamp": 1791040998,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000031",
+            "merchant": {
+                "order_ref": "CH-000034"
+            },
+            "payer_id": "CU-00078",
+            "total": "625.34",
+            "ccy": "THB",
+            "timestamp": 1790833156,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000239",
+            "merchant": {
+                "order_ref": "CH-000255"
+            },
+            "payer_id": "CU-00098",
+            "total": "1404.36",
+            "ccy": "THB",
+            "timestamp": 1790966351,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000208",
+            "merchant": {
+                "order_ref": "CH-000223"
+            },
+            "payer_id": "CU-00125",
+            "total": "2771.03",
+            "ccy": "PHP",
+            "timestamp": 1790947423,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000518",
+            "merchant": {
+                "order_ref": "CH-000553"
+            },
+            "payer_id": "CU-00069",
+            "total": "3423.67",
+            "ccy": "PHP",
+            "timestamp": 1791146630,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000067",
+            "merchant": {
+                "order_ref": "CH-000070"
+            },
+            "payer_id": "CU-00068",
+            "total": "1450.29",
+            "ccy": "THB",
+            "timestamp": 1790854811,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000717",
+            "merchant": {
+                "order_ref": "CH-000766"
+            },
+            "payer_id": "CU-00056",
+            "total": "473789.90",
+            "ccy": "IDR",
+            "timestamp": 1791274912,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000018",
+            "merchant": {
+                "order_ref": "CH-000020"
+            },
+            "payer_id": "CU-00081",
+            "total": "345450.17",
+            "ccy": "IDR",
+            "timestamp": 1790824487,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000376",
+            "merchant": {
+                "order_ref": "CH-000400"
+            },
+            "payer_id": "CU-00022",
+            "total": "1871.27",
+            "ccy": "THB",
+            "timestamp": 1791054115,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000323",
+            "merchant": {
+                "order_ref": "CH-000345"
+            },
+            "payer_id": "CU-00162",
+            "total": "951.64",
+            "ccy": "THB",
+            "timestamp": 1791020762,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000360",
+            "merchant": {
+                "order_ref": "CH-000384"
+            },
+            "payer_id": "CU-00130",
+            "total": "858.16",
+            "ccy": "THB",
+            "timestamp": 1791044545,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000216",
+            "merchant": {
+                "order_ref": "CH-000232"
+            },
+            "payer_id": "CU-00070",
+            "total": "438731.34",
+            "ccy": "IDR",
+            "timestamp": 1790952828,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000800",
+            "merchant": {
+                "order_ref": "CH-000857"
+            },
+            "payer_id": "CU-00092",
+            "total": "354210.13",
+            "ccy": "IDR",
+            "timestamp": 1791330375,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000662",
+            "merchant": {
+                "order_ref": "CH-000705"
+            },
+            "payer_id": "CU-00097",
+            "total": "201849.49",
+            "ccy": "IDR",
+            "timestamp": 1791238131,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000413",
+            "merchant": {
+                "order_ref": "CH-000441"
+            },
+            "payer_id": "CU-00125",
+            "total": "253803.40",
+            "ccy": "IDR",
+            "timestamp": 1791078600,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000259",
+            "merchant": {
+                "order_ref": "CH-000277"
+            },
+            "payer_id": "CU-00050",
+            "total": "1297.03",
+            "ccy": "PHP",
+            "timestamp": 1790979505,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000851",
+            "merchant": {
+                "order_ref": "CH-000913"
+            },
+            "payer_id": "CU-00032",
+            "total": "32415.45",
+            "ccy": "IDR",
+            "timestamp": 1791363676,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000540",
+            "merchant": {
+                "order_ref": "CH-000575"
+            },
+            "payer_id": "CU-00068",
+            "total": "264997.30",
+            "ccy": "IDR",
+            "timestamp": 1791159724,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000445",
+            "merchant": {
+                "order_ref": "CH-000475"
+            },
+            "payer_id": "CU-00046",
+            "total": "93834.90",
+            "ccy": "IDR",
+            "timestamp": 1791099362,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000600",
+            "merchant": {
+                "order_ref": "CH-000638"
+            },
+            "payer_id": "CU-00150",
+            "total": "540817.39",
+            "ccy": "IDR",
+            "timestamp": 1791197931,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000945",
+            "merchant": {
+                "order_ref": "CH-900014"
+            },
+            "payer_id": "CU-P0014",
+            "total": "208316.07",
+            "ccy": "IDR",
+            "timestamp": 1791311896,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000424",
+            "merchant": {
+                "order_ref": "CH-000453"
+            },
+            "payer_id": "CU-00174",
+            "total": "592732.81",
+            "ccy": "IDR",
+            "timestamp": 1791086055,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000654",
+            "merchant": {
+                "order_ref": "CH-000697"
+            },
+            "payer_id": "CU-00079",
+            "total": "3046.58",
+            "ccy": "PHP",
+            "timestamp": 1791233612,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000398",
+            "merchant": {
+                "order_ref": "CH-000425"
+            },
+            "payer_id": "CU-00113",
+            "total": "1948.57",
+            "ccy": "THB",
+            "timestamp": 1791069036,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000255",
+            "merchant": {
+                "order_ref": "CH-000273"
+            },
+            "payer_id": "CU-00073",
+            "total": "386869.80",
+            "ccy": "IDR",
+            "timestamp": 1790977634,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000042",
+            "merchant": {
+                "order_ref": "CH-000045"
+            },
+            "payer_id": "CU-00051",
+            "total": "1137.42",
+            "ccy": "THB",
+            "timestamp": 1790839927,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000845",
+            "merchant": {
+                "order_ref": "CH-000906"
+            },
+            "payer_id": "CU-00010",
+            "total": "583435.38",
+            "ccy": "IDR",
+            "timestamp": 1791359959,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000841",
+            "merchant": {
+                "order_ref": "CH-000902"
+            },
+            "payer_id": "CU-00169",
+            "total": "2182.70",
+            "ccy": "PHP",
+            "timestamp": 1791357585,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000389",
+            "merchant": {
+                "order_ref": "CH-000416"
+            },
+            "payer_id": "CU-00176",
+            "total": "1275.20",
+            "ccy": "THB",
+            "timestamp": 1791063704,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000826",
+            "merchant": {
+                "order_ref": "CH-000884"
+            },
+            "payer_id": "CU-00052",
+            "total": "576010.10",
+            "ccy": "IDR",
+            "timestamp": 1791346613,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000659",
+            "merchant": {
+                "order_ref": "CH-000702"
+            },
+            "payer_id": "CU-00139",
+            "total": "35839.13",
+            "ccy": "IDR",
+            "timestamp": 1791236689,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000195",
+            "merchant": {
+                "order_ref": "CH-000209"
+            },
+            "payer_id": "CU-00098",
+            "total": "1887.15",
+            "ccy": "PHP",
+            "timestamp": 1790938863,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000892",
+            "merchant": {
+                "order_ref": "CH-000957"
+            },
+            "payer_id": "CU-00116",
+            "total": "403.15",
+            "ccy": "PHP",
+            "timestamp": 1791390564,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000855",
+            "merchant": {
+                "order_ref": "CH-000917"
+            },
+            "payer_id": "CU-00070",
+            "total": "819.03",
+            "ccy": "THB",
+            "timestamp": 1791366216,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000572",
+            "merchant": {
+                "order_ref": "CH-000609"
+            },
+            "payer_id": "CU-00074",
+            "total": "281109.72",
+            "ccy": "IDR",
+            "timestamp": 1791180564,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000116",
+            "merchant": {
+                "order_ref": "CH-000121"
+            },
+            "payer_id": "CU-00014",
+            "total": "568594.99",
+            "ccy": "IDR",
+            "timestamp": 1790885599,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000896",
+            "merchant": {
+                "order_ref": "CH-000960"
+            },
+            "payer_id": "CU-00025",
+            "total": "335524.89",
+            "ccy": "IDR",
+            "timestamp": 1791392540,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000258",
+            "merchant": {
+                "order_ref": "CH-000276"
+            },
+            "payer_id": "CU-00083",
+            "total": "2803.84",
+            "ccy": "PHP",
+            "timestamp": 1790979466,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000678",
+            "merchant": {
+                "order_ref": "CH-000724"
+            },
+            "payer_id": "CU-00057",
+            "total": "429028.42",
+            "ccy": "IDR",
+            "timestamp": 1791249670,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000149",
+            "merchant": {
+                "order_ref": "CH-000159"
+            },
+            "payer_id": "CU-00020",
+            "total": "784.05",
+            "ccy": "THB",
+            "timestamp": 1790908434,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000032",
+            "merchant": {
+                "order_ref": "CH-000035"
+            },
+            "payer_id": "CU-00083",
+            "total": "297624.90",
+            "ccy": "IDR",
+            "timestamp": 1790833469,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000486",
+            "merchant": {
+                "order_ref": "CH-000518"
+            },
+            "payer_id": "CU-00031",
+            "total": "519816.66",
+            "ccy": "IDR",
+            "timestamp": 1791125086,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000645",
+            "merchant": {
+                "order_ref": "CH-000688"
+            },
+            "payer_id": "CU-00075",
+            "total": "167.22",
+            "ccy": "THB",
+            "timestamp": 1791228038,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000857",
+            "merchant": {
+                "order_ref": "CH-000919"
+            },
+            "payer_id": "CU-00031",
+            "total": "1883.59",
+            "ccy": "THB",
+            "timestamp": 1791367439,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000885",
+            "merchant": {
+                "order_ref": "CH-000949"
+            },
+            "payer_id": "CU-00102",
+            "total": "326462.88",
+            "ccy": "IDR",
+            "timestamp": 1791385843,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000488",
+            "merchant": {
+                "order_ref": "CH-000520"
+            },
+            "payer_id": "CU-00189",
+            "total": "478127.65",
+            "ccy": "IDR",
+            "timestamp": 1791126530,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000089",
+            "merchant": {
+                "order_ref": "CH-000093"
+            },
+            "payer_id": "CU-00001",
+            "total": "3037.35",
+            "ccy": "PHP",
+            "timestamp": 1790868389,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000887",
+            "merchant": {
+                "order_ref": "CH-000952"
+            },
+            "payer_id": "CU-00199",
+            "total": "45783.78",
+            "ccy": "IDR",
+            "timestamp": 1791387454,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000799",
+            "merchant": {
+                "order_ref": "CH-000856"
+            },
+            "payer_id": "CU-00085",
+            "total": "984.26",
+            "ccy": "PHP",
+            "timestamp": 1791329333,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000558",
+            "merchant": {
+                "order_ref": "CH-000595"
+            },
+            "payer_id": "CU-00107",
+            "total": "2150.31",
+            "ccy": "PHP",
+            "timestamp": 1791171901,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000245",
+            "merchant": {
+                "order_ref": "CH-000263"
+            },
+            "payer_id": "CU-00199",
+            "total": "33314.06",
+            "ccy": "IDR",
+            "timestamp": 1790971397,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000308",
+            "merchant": {
+                "order_ref": "CH-000330"
+            },
+            "payer_id": "CU-00103",
+            "total": "1038.30",
+            "ccy": "THB",
+            "timestamp": 1791011862,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000178",
+            "merchant": {
+                "order_ref": "CH-000190"
+            },
+            "payer_id": "CU-00040",
+            "total": "2135.52",
+            "ccy": "PHP",
+            "timestamp": 1790927495,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000697",
+            "merchant": {
+                "order_ref": "CH-000745"
+            },
+            "payer_id": "CU-00074",
+            "total": "1881.84",
+            "ccy": "THB",
+            "timestamp": 1791262469,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000595",
+            "merchant": {
+                "order_ref": "CH-000633"
+            },
+            "payer_id": "CU-00178",
+            "total": "303711.15",
+            "ccy": "IDR",
+            "timestamp": 1791194994,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000147",
+            "merchant": {
+                "order_ref": "CH-000156"
+            },
+            "payer_id": "CU-00042",
+            "total": "1858.85",
+            "ccy": "THB",
+            "timestamp": 1790906499,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000170",
+            "merchant": {
+                "order_ref": "CH-000181"
+            },
+            "payer_id": "CU-00030",
+            "total": "140467.52",
+            "ccy": "IDR",
+            "timestamp": 1790921902,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000110",
+            "merchant": {
+                "order_ref": "CH-000115"
+            },
+            "payer_id": "CU-00007",
+            "total": "528413.82",
+            "ccy": "IDR",
+            "timestamp": 1790881893,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000891",
+            "merchant": {
+                "order_ref": "CH-000956"
+            },
+            "payer_id": "CU-00132",
+            "total": "906.62",
+            "ccy": "PHP",
+            "timestamp": 1791389721,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000104",
+            "merchant": {
+                "order_ref": "CH-000109"
+            },
+            "payer_id": "CU-00133",
+            "total": "3495.19",
+            "ccy": "PHP",
+            "timestamp": 1790878175,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000585",
+            "merchant": {
+                "order_ref": "CH-000623"
+            },
+            "payer_id": "CU-00099",
+            "total": "693.82",
+            "ccy": "PHP",
+            "timestamp": 1791188742,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000847",
+            "merchant": {
+                "order_ref": "CH-000908"
+            },
+            "payer_id": "CU-00192",
+            "total": "575818.45",
+            "ccy": "IDR",
+            "timestamp": 1791360655,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000768",
+            "merchant": {
+                "order_ref": "CH-000824"
+            },
+            "payer_id": "CU-00070",
+            "total": "2546.74",
+            "ccy": "PHP",
+            "timestamp": 1791310469,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000703",
+            "merchant": {
+                "order_ref": "CH-000751"
+            },
+            "payer_id": "CU-00190",
+            "total": "732.71",
+            "ccy": "PHP",
+            "timestamp": 1791265951,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000725",
+            "merchant": {
+                "order_ref": "CH-000776"
+            },
+            "payer_id": "CU-00112",
+            "total": "742.08",
+            "ccy": "THB",
+            "timestamp": 1791280987,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000349",
+            "merchant": {
+                "order_ref": "CH-000372"
+            },
+            "payer_id": "CU-00004",
+            "total": "399419.16",
+            "ccy": "IDR",
+            "timestamp": 1791037334,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000737",
+            "merchant": {
+                "order_ref": "CH-000789"
+            },
+            "payer_id": "CU-00028",
+            "total": "628.60",
+            "ccy": "THB",
+            "timestamp": 1791289111,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000306",
+            "merchant": {
+                "order_ref": "CH-000328"
+            },
+            "payer_id": "CU-00134",
+            "total": "1321.03",
+            "ccy": "PHP",
+            "timestamp": 1791010683,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000024",
+            "merchant": {
+                "order_ref": "CH-000027"
+            },
+            "payer_id": "CU-00012",
+            "total": "270251.90",
+            "ccy": "IDR",
+            "timestamp": 1790828874,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000456",
+            "merchant": {
+                "order_ref": "CH-000485"
+            },
+            "payer_id": "CU-00001",
+            "total": "79467.93",
+            "ccy": "IDR",
+            "timestamp": 1791105369,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000252",
+            "merchant": {
+                "order_ref": "CH-000270"
+            },
+            "payer_id": "CU-00018",
+            "total": "55908.15",
+            "ccy": "IDR",
+            "timestamp": 1790975315,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000274",
+            "merchant": {
+                "order_ref": "CH-000294"
+            },
+            "payer_id": "CU-00157",
+            "total": "580359.56",
+            "ccy": "IDR",
+            "timestamp": 1790990081,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000332",
+            "merchant": {
+                "order_ref": "CH-000354"
+            },
+            "payer_id": "CU-00181",
+            "total": "184.03",
+            "ccy": "THB",
+            "timestamp": 1791026349,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000551",
+            "merchant": {
+                "order_ref": "CH-000587"
+            },
+            "payer_id": "CU-00004",
+            "total": "417077.17",
+            "ccy": "IDR",
+            "timestamp": 1791166790,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000670",
+            "merchant": {
+                "order_ref": "CH-000713"
+            },
+            "payer_id": "CU-00116",
+            "total": "415.98",
+            "ccy": "THB",
+            "timestamp": 1791243214,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000084",
+            "merchant": {
+                "order_ref": "CH-000088"
+            },
+            "payer_id": "CU-00017",
+            "total": "1924.15",
+            "ccy": "PHP",
+            "timestamp": 1790865720,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000819",
+            "merchant": {
+                "order_ref": "CH-000877"
+            },
+            "payer_id": "CU-00122",
+            "total": "190290.88",
+            "ccy": "IDR",
+            "timestamp": 1791342025,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000366",
+            "merchant": {
+                "order_ref": "CH-000390"
+            },
+            "payer_id": "CU-00001",
+            "total": "540054.02",
+            "ccy": "IDR",
+            "timestamp": 1791048348,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000250",
+            "merchant": {
+                "order_ref": "CH-000268"
+            },
+            "payer_id": "CU-00065",
+            "total": "1454.86",
+            "ccy": "THB",
+            "timestamp": 1790974158,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000470",
+            "merchant": {
+                "order_ref": "CH-000501"
+            },
+            "payer_id": "CU-00138",
+            "total": "404810.07",
+            "ccy": "IDR",
+            "timestamp": 1791115397,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000361",
+            "merchant": {
+                "order_ref": "CH-000385"
+            },
+            "payer_id": "CU-00159",
+            "total": "455428.75",
+            "ccy": "IDR",
+            "timestamp": 1791044829,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000632",
+            "merchant": {
+                "order_ref": "CH-000674"
+            },
+            "payer_id": "CU-00088",
+            "total": "573885.25",
+            "ccy": "IDR",
+            "timestamp": 1791219414,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000210",
+            "merchant": {
+                "order_ref": "CH-000225"
+            },
+            "payer_id": "CU-00031",
+            "total": "577521.73",
+            "ccy": "IDR",
+            "timestamp": 1790948467,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000939",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-P0008",
+            "total": "1770.44",
+            "ccy": "THB",
+            "timestamp": 1790892697,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000759",
+            "merchant": {
+                "order_ref": "CH-000815"
+            },
+            "payer_id": "CU-00014",
+            "total": "3053.04",
+            "ccy": "PHP",
+            "timestamp": 1791304922,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000618",
+            "merchant": {
+                "order_ref": "CH-000660"
+            },
+            "payer_id": "CU-00173",
+            "total": "2073.19",
+            "ccy": "PHP",
+            "timestamp": 1791211237,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000049",
+            "merchant": {
+                "order_ref": "CH-000052"
+            },
+            "payer_id": "CU-00153",
+            "total": "105931.74",
+            "ccy": "IDR",
+            "timestamp": 1790843756,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000657",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00094",
+            "total": "1203.12",
+            "ccy": "THB",
+            "timestamp": 1791235146,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000941",
+            "merchant": {
+                "order_ref": "CH-900010"
+            },
+            "payer_id": "CU-P0010",
+            "total": "434463.75",
+            "ccy": "IDR",
+            "timestamp": 1791287469,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000817",
+            "merchant": {
+                "order_ref": "CH-000875"
+            },
+            "payer_id": "CU-00033",
+            "total": "81393.34",
+            "ccy": "IDR",
+            "timestamp": 1791340952,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000038",
+            "merchant": {
+                "order_ref": "CH-000041"
+            },
+            "payer_id": "CU-00064",
+            "total": "2723.78",
+            "ccy": "PHP",
+            "timestamp": 1790837167,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000502",
+            "merchant": {
+                "order_ref": "CH-000536"
+            },
+            "payer_id": "CU-00041",
+            "total": "1962.90",
+            "ccy": "THB",
+            "timestamp": 1791136098,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000796",
+            "merchant": {
+                "order_ref": "CH-000853"
+            },
+            "payer_id": "CU-00085",
+            "total": "1512.67",
+            "ccy": "PHP",
+            "timestamp": 1791327928,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000693",
+            "merchant": {
+                "order_ref": "CH-000741"
+            },
+            "payer_id": "CU-00106",
+            "total": "2345.84",
+            "ccy": "PHP",
+            "timestamp": 1791260188,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000901",
+            "merchant": {
+                "order_ref": "CH-000968"
+            },
+            "payer_id": "CU-00013",
+            "total": "852.86",
+            "ccy": "THB",
+            "timestamp": 1791396924,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000828",
+            "merchant": {
+                "order_ref": "CH-000886"
+            },
+            "payer_id": "CU-00152",
+            "total": "250256.96",
+            "ccy": "IDR",
+            "timestamp": 1791347418,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000432",
+            "merchant": {
+                "order_ref": "CH-000462"
+            },
+            "payer_id": "CU-00162",
+            "total": "173.96",
+            "ccy": "PHP",
+            "timestamp": 1791091359,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000757",
+            "merchant": {
+                "order_ref": "CH-000813"
+            },
+            "payer_id": "CU-00098",
+            "total": "270610.90",
+            "ccy": "IDR",
+            "timestamp": 1791303579,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000205",
+            "merchant": {
+                "order_ref": "CH-000220"
+            },
+            "payer_id": "CU-00111",
+            "total": "782.99",
+            "ccy": "THB",
+            "timestamp": 1790945648,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000507",
+            "merchant": {
+                "order_ref": "CH-000541"
+            },
+            "payer_id": "CU-00132",
+            "total": "439635.45",
+            "ccy": "IDR",
+            "timestamp": 1791139095,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000296",
+            "merchant": {
+                "order_ref": "CH-000316"
+            },
+            "payer_id": "CU-00077",
+            "total": "396.05",
+            "ccy": "THB",
+            "timestamp": 1791003144,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000017",
+            "merchant": {
+                "order_ref": "CH-000019"
+            },
+            "payer_id": "CU-00099",
+            "total": "330193.27",
+            "ccy": "IDR",
+            "timestamp": 1790824038,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000048",
+            "merchant": {
+                "order_ref": "CH-000051"
+            },
+            "payer_id": "CU-00144",
+            "total": "490277.67",
+            "ccy": "IDR",
+            "timestamp": 1790843028,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000215",
+            "merchant": {
+                "order_ref": "CH-000231"
+            },
+            "payer_id": "CU-00072",
+            "total": "2621.17",
+            "ccy": "PHP",
+            "timestamp": 1790951920,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000102",
+            "merchant": {
+                "order_ref": "CH-000107"
+            },
+            "payer_id": "CU-00108",
+            "total": "85225.69",
+            "ccy": "IDR",
+            "timestamp": 1790877144,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000030",
+            "merchant": {
+                "order_ref": "CH-000033"
+            },
+            "payer_id": "CU-00139",
+            "total": "106460.13",
+            "ccy": "IDR",
+            "timestamp": 1790832500,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000037",
+            "merchant": {
+                "order_ref": "CH-000040"
+            },
+            "payer_id": "CU-00023",
+            "total": "452915.93",
+            "ccy": "IDR",
+            "timestamp": 1790836664,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000164",
+            "merchant": {
+                "order_ref": "CH-000174"
+            },
+            "payer_id": "CU-00139",
+            "total": "420002.65",
+            "ccy": "IDR",
+            "timestamp": 1790917387,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000692",
+            "merchant": {
+                "order_ref": "CH-000739"
+            },
+            "payer_id": "CU-00031",
+            "total": "50718.78",
+            "ccy": "IDR",
+            "timestamp": 1791258783,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000578",
+            "merchant": {
+                "order_ref": "CH-000615"
+            },
+            "payer_id": "CU-00028",
+            "total": "1608.37",
+            "ccy": "PHP",
+            "timestamp": 1791183670,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000384",
+            "merchant": {
+                "order_ref": "CH-000411"
+            },
+            "payer_id": "CU-00097",
+            "total": "242049.47",
+            "ccy": "IDR",
+            "timestamp": 1791060670,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000386",
+            "merchant": {
+                "order_ref": "CH-000413"
+            },
+            "payer_id": "CU-00176",
+            "total": "848.45",
+            "ccy": "PHP",
+            "timestamp": 1791061661,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000681",
+            "merchant": {
+                "order_ref": "CH-000727"
+            },
+            "payer_id": "CU-00060",
+            "total": "55409.10",
+            "ccy": "IDR",
+            "timestamp": 1791251596,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000833",
+            "merchant": {
+                "order_ref": "CH-000892"
+            },
+            "payer_id": "CU-00027",
+            "total": "3271.84",
+            "ccy": "PHP",
+            "timestamp": 1791351452,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000194",
+            "merchant": {
+                "order_ref": "CH-000207"
+            },
+            "payer_id": "CU-00151",
+            "total": "176678.18",
+            "ccy": "IDR",
+            "timestamp": 1790937464,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000056",
+            "merchant": {
+                "order_ref": "CH-000059"
+            },
+            "payer_id": "CU-00108",
+            "total": "113856.39",
+            "ccy": "IDR",
+            "timestamp": 1790848163,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000003",
+            "merchant": {
+                "order_ref": "CH-000003"
+            },
+            "payer_id": "CU-00107",
+            "total": "972.94",
+            "ccy": "THB",
+            "timestamp": 1790814567,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000191",
+            "merchant": {
+                "order_ref": "CH-000204"
+            },
+            "payer_id": "CU-00005",
+            "total": "1010.41",
+            "ccy": "PHP",
+            "timestamp": 1790935684,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000176",
+            "merchant": {
+                "order_ref": "CH-000188"
+            },
+            "payer_id": "CU-00075",
+            "total": "838.13",
+            "ccy": "THB",
+            "timestamp": 1790926219,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000075",
+            "merchant": {
+                "order_ref": "CH-000078"
+            },
+            "payer_id": "CU-00152",
+            "total": "366934.94",
+            "ccy": "IDR",
+            "timestamp": 1790859308,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000719",
+            "merchant": {
+                "order_ref": "CH-000768"
+            },
+            "payer_id": "CU-00089",
+            "total": "564794.23",
+            "ccy": "IDR",
+            "timestamp": 1791276306,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000709",
+            "merchant": {
+                "order_ref": "CH-000758"
+            },
+            "payer_id": "CU-00108",
+            "total": "2169.21",
+            "ccy": "PHP",
+            "timestamp": 1791270382,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000860",
+            "merchant": {
+                "order_ref": "CH-000922"
+            },
+            "payer_id": "CU-00121",
+            "total": "1305.16",
+            "ccy": "THB",
+            "timestamp": 1791369532,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000238",
+            "merchant": {
+                "order_ref": "CH-000254"
+            },
+            "payer_id": "CU-00129",
+            "total": "562.19",
+            "ccy": "THB",
+            "timestamp": 1790965797,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000610",
+            "merchant": {
+                "order_ref": "CH-000649"
+            },
+            "payer_id": "CU-00044",
+            "total": "2192.84",
+            "ccy": "PHP",
+            "timestamp": 1791204317,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000706",
+            "merchant": {
+                "order_ref": "CH-000755"
+            },
+            "payer_id": "CU-00127",
+            "total": "1159.58",
+            "ccy": "THB",
+            "timestamp": 1791268440,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000497",
+            "merchant": {
+                "order_ref": "CH-000531"
+            },
+            "payer_id": "CU-00133",
+            "total": "200.09",
+            "ccy": "THB",
+            "timestamp": 1791132976,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000716",
+            "merchant": {
+                "order_ref": "CH-000765"
+            },
+            "payer_id": "CU-00135",
+            "total": "2313.92",
+            "ccy": "PHP",
+            "timestamp": 1791274513,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000926",
+            "merchant": {
+                "order_ref": "CH-000994"
+            },
+            "payer_id": "CU-00089",
+            "total": "96066.34",
+            "ccy": "IDR",
+            "timestamp": 1791413052,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000897",
+            "merchant": {
+                "order_ref": "CH-000961"
+            },
+            "payer_id": "CU-00076",
+            "total": "1373.83",
+            "ccy": "PHP",
+            "timestamp": 1791392914,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000460",
+            "merchant": {
+                "order_ref": "CH-000491"
+            },
+            "payer_id": "CU-00008",
+            "total": "1996.79",
+            "ccy": "PHP",
+            "timestamp": 1791109320,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000936",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-P0005",
+            "total": "276853.95",
+            "ccy": "IDR",
+            "timestamp": 1790878284,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000707",
+            "merchant": {
+                "order_ref": "CH-000756"
+            },
+            "payer_id": "CU-00054",
+            "total": "229802.90",
+            "ccy": "IDR",
+            "timestamp": 1791269252,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000762",
+            "merchant": {
+                "order_ref": "CH-000818"
+            },
+            "payer_id": "CU-00112",
+            "total": "970.30",
+            "ccy": "PHP",
+            "timestamp": 1791306584,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000461",
+            "merchant": {
+                "order_ref": "CH-000491"
+            },
+            "payer_id": "CU-00008",
+            "total": "1996.79",
+            "ccy": "PHP",
+            "timestamp": 1791111447,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000343",
+            "merchant": {
+                "order_ref": "CH-000366"
+            },
+            "payer_id": "CU-00103",
+            "total": "106.41",
+            "ccy": "THB",
+            "timestamp": 1791033295,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000738",
+            "merchant": {
+                "order_ref": "CH-000790"
+            },
+            "payer_id": "CU-00198",
+            "total": "689.85",
+            "ccy": "THB",
+            "timestamp": 1791289941,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000506",
+            "merchant": {
+                "order_ref": "CH-000540"
+            },
+            "payer_id": "CU-00129",
+            "total": "1150.76",
+            "ccy": "PHP",
+            "timestamp": 1791138652,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000458",
+            "merchant": {
+                "order_ref": "CH-000487"
+            },
+            "payer_id": "CU-00190",
+            "total": "2703.70",
+            "ccy": "PHP",
+            "timestamp": 1791106570,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000150",
+            "merchant": {
+                "order_ref": "CH-000160"
+            },
+            "payer_id": "CU-00167",
+            "total": "363.98",
+            "ccy": "THB",
+            "timestamp": 1790909064,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000810",
+            "merchant": {
+                "order_ref": "CH-000868"
+            },
+            "payer_id": "CU-00187",
+            "total": "507.62",
+            "ccy": "THB",
+            "timestamp": 1791336922,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000200",
+            "merchant": {
+                "order_ref": "CH-000215"
+            },
+            "payer_id": "CU-00053",
+            "total": "696.22",
+            "ccy": "PHP",
+            "timestamp": 1790942329,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000609",
+            "merchant": {
+                "order_ref": "CH-000648"
+            },
+            "payer_id": "CU-00157",
+            "total": "266545.11",
+            "ccy": "IDR",
+            "timestamp": 1791203889,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000345",
+            "merchant": {
+                "order_ref": "CH-000368"
+            },
+            "payer_id": "CU-00016",
+            "total": "212967.73",
+            "ccy": "IDR",
+            "timestamp": 1791034765,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000685",
+            "merchant": {
+                "order_ref": "CH-000731"
+            },
+            "payer_id": "CU-00161",
+            "total": "139586.69",
+            "ccy": "IDR",
+            "timestamp": 1791254315,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000122",
+            "merchant": {
+                "order_ref": "CH-000128"
+            },
+            "payer_id": "CU-00154",
+            "total": "1259.18",
+            "ccy": "PHP",
+            "timestamp": 1790889866,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000169",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00021",
+            "total": "28282.19",
+            "ccy": "IDR",
+            "timestamp": 1790921093,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000626",
+            "merchant": {
+                "order_ref": "CH-000668"
+            },
+            "payer_id": "CU-00158",
+            "total": "402088.74",
+            "ccy": "IDR",
+            "timestamp": 1791216025,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000538",
+            "merchant": {
+                "order_ref": "CH-000573"
+            },
+            "payer_id": "CU-00156",
+            "total": "488435.16",
+            "ccy": "IDR",
+            "timestamp": 1791158695,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000399",
+            "merchant": {
+                "order_ref": "CH-000426"
+            },
+            "payer_id": "CU-00164",
+            "total": "174763.46",
+            "ccy": "IDR",
+            "timestamp": 1791069883,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000769",
+            "merchant": {
+                "order_ref": "CH-000825"
+            },
+            "payer_id": "CU-00087",
+            "total": "373240.21",
+            "ccy": "IDR",
+            "timestamp": 1791310726,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000272",
+            "merchant": {
+                "order_ref": "CH-000292"
+            },
+            "payer_id": "CU-00088",
+            "total": "48334.76",
+            "ccy": "IDR",
+            "timestamp": 1790988799,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000746",
+            "merchant": {
+                "order_ref": "CH-000799"
+            },
+            "payer_id": "CU-00189",
+            "total": "1019.39",
+            "ccy": "THB",
+            "timestamp": 1791295227,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000298",
+            "merchant": {
+                "order_ref": "CH-000319"
+            },
+            "payer_id": "CU-00021",
+            "total": "840.70",
+            "ccy": "THB",
+            "timestamp": 1791005175,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000198",
+            "merchant": {
+                "order_ref": "CH-000213"
+            },
+            "payer_id": "CU-00147",
+            "total": "545472.72",
+            "ccy": "IDR",
+            "timestamp": 1790941387,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000282",
+            "merchant": {
+                "order_ref": "CH-000302"
+            },
+            "payer_id": "CU-00008",
+            "total": "338531.72",
+            "ccy": "IDR",
+            "timestamp": 1790994856,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000842",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00141",
+            "total": "240730.74",
+            "ccy": "IDR",
+            "timestamp": 1791358003,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000189",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00153",
+            "total": "1639.29",
+            "ccy": "THB",
+            "timestamp": 1790934219,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000480",
+            "merchant": {
+                "order_ref": "CH-000512"
+            },
+            "payer_id": "CU-00148",
+            "total": "47075.86",
+            "ccy": "IDR",
+            "timestamp": 1791121921,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000514",
+            "merchant": {
+                "order_ref": "CH-000549"
+            },
+            "payer_id": "CU-00113",
+            "total": "401665.71",
+            "ccy": "IDR",
+            "timestamp": 1791144045,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000756",
+            "merchant": {
+                "order_ref": "CH-000810"
+            },
+            "payer_id": "CU-00086",
+            "total": "1319.92",
+            "ccy": "PHP",
+            "timestamp": 1791301542,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000219",
+            "merchant": {
+                "order_ref": "CH-000235"
+            },
+            "payer_id": "CU-00097",
+            "total": "504347.54",
+            "ccy": "IDR",
+            "timestamp": 1790954322,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000334",
+            "merchant": {
+                "order_ref": "CH-000356"
+            },
+            "payer_id": "CU-00042",
+            "total": "333.89",
+            "ccy": "THB",
+            "timestamp": 1791027559,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000664",
+            "merchant": {
+                "order_ref": "CH-000707"
+            },
+            "payer_id": "CU-00138",
+            "total": "648.41",
+            "ccy": "THB",
+            "timestamp": 1791239548,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000379",
+            "merchant": {
+                "order_ref": "CH-000403"
+            },
+            "payer_id": "CU-00063",
+            "total": "3055.60",
+            "ccy": "PHP",
+            "timestamp": 1791055726,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000586",
+            "merchant": {
+                "order_ref": "CH-000624"
+            },
+            "payer_id": "CU-00017",
+            "total": "514.97",
+            "ccy": "PHP",
+            "timestamp": 1791189419,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000667",
+            "merchant": {
+                "order_ref": "CH-000711"
+            },
+            "payer_id": "CU-00008",
+            "total": "248969.59",
+            "ccy": "IDR",
+            "timestamp": 1791241646,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000815",
+            "merchant": {
+                "order_ref": "CH-000873"
+            },
+            "payer_id": "CU-00085",
+            "total": "457920.83",
+            "ccy": "IDR",
+            "timestamp": 1791340009,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000553",
+            "merchant": {
+                "order_ref": "CH-000589"
+            },
+            "payer_id": "CU-00100",
+            "total": "506295.87",
+            "ccy": "IDR",
+            "timestamp": 1791168099,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000778",
+            "merchant": {
+                "order_ref": "CH-000835"
+            },
+            "payer_id": "CU-00091",
+            "total": "72208.61",
+            "ccy": "IDR",
+            "timestamp": 1791317083,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000421",
+            "merchant": {
+                "order_ref": "CH-000450"
+            },
+            "payer_id": "CU-00034",
+            "total": "162892.40",
+            "ccy": "IDR",
+            "timestamp": 1791084419,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000856",
+            "merchant": {
+                "order_ref": "CH-000918"
+            },
+            "payer_id": "CU-00033",
+            "total": "1379.45",
+            "ccy": "THB",
+            "timestamp": 1791367001,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000760",
+            "merchant": {
+                "order_ref": "CH-000816"
+            },
+            "payer_id": "CU-00118",
+            "total": "1426.61",
+            "ccy": "PHP",
+            "timestamp": 1791305585,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000115",
+            "merchant": {
+                "order_ref": "CH-000120"
+            },
+            "payer_id": "CU-00061",
+            "total": "2742.33",
+            "ccy": "PHP",
+            "timestamp": 1790884927,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000594",
+            "merchant": {
+                "order_ref": "ch632"
+            },
+            "payer_id": "CU-00008",
+            "total": "244068.53",
+            "ccy": "IDR",
+            "timestamp": 1791193970,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000041",
+            "merchant": {
+                "order_ref": "CH-000044"
+            },
+            "payer_id": "CU-00028",
+            "total": "887.62",
+            "ccy": "THB",
+            "timestamp": 1790838883,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000287",
+            "merchant": {
+                "order_ref": "CH-000307"
+            },
+            "payer_id": "CU-00086",
+            "total": "2458.15",
+            "ccy": "PHP",
+            "timestamp": 1790998054,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000766",
+            "merchant": {
+                "order_ref": "CH-000822"
+            },
+            "payer_id": "CU-00124",
+            "total": "548480.45",
+            "ccy": "IDR",
+            "timestamp": 1791309198,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000114",
+            "merchant": {
+                "order_ref": "CH-000119"
+            },
+            "payer_id": "CU-00019",
+            "total": "1101.32",
+            "ccy": "THB",
+            "timestamp": 1790884550,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000396",
+            "merchant": {
+                "order_ref": "CH-000423"
+            },
+            "payer_id": "CU-00114",
+            "total": "1472.74",
+            "ccy": "PHP",
+            "timestamp": 1791068142,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000599",
+            "merchant": {
+                "order_ref": "CH-000637"
+            },
+            "payer_id": "CU-00045",
+            "total": "206964.88",
+            "ccy": "IDR",
+            "timestamp": 1791197192,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000877",
+            "merchant": {
+                "order_ref": "CH-000941"
+            },
+            "payer_id": "CU-00158",
+            "total": "931.72",
+            "ccy": "THB",
+            "timestamp": 1791380860,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000869",
+            "merchant": {
+                "order_ref": "CH-000931"
+            },
+            "payer_id": "CU-00008",
+            "total": "526.74",
+            "ccy": "THB",
+            "timestamp": 1791375052,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000123",
+            "merchant": {
+                "order_ref": "CH-000129"
+            },
+            "payer_id": "CU-00171",
+            "total": "1259.31",
+            "ccy": "THB",
+            "timestamp": 1790890159,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000285",
+            "merchant": {
+                "order_ref": "CH-000305"
+            },
+            "payer_id": "CU-00104",
+            "total": "737.01",
+            "ccy": "PHP",
+            "timestamp": 1790996611,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000437",
+            "merchant": {
+                "order_ref": "CH-000467"
+            },
+            "payer_id": "CU-00119",
+            "total": "2953.49",
+            "ccy": "PHP",
+            "timestamp": 1791094425,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000004",
+            "merchant": {
+                "order_ref": "CH-000004"
+            },
+            "payer_id": "CU-00170",
+            "total": "722.20",
+            "ccy": "THB",
+            "timestamp": 1790814815,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000355",
+            "merchant": {
+                "order_ref": "CH-000379"
+            },
+            "payer_id": "CU-00020",
+            "total": "2072.59",
+            "ccy": "PHP",
+            "timestamp": 1791041600,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000825",
+            "merchant": {
+                "order_ref": "CH-000883"
+            },
+            "payer_id": "CU-00173",
+            "total": "79237.28",
+            "ccy": "IDR",
+            "timestamp": 1791345747,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000184",
+            "merchant": {
+                "order_ref": "CH-000197"
+            },
+            "payer_id": "CU-00106",
+            "total": "2258.20",
+            "ccy": "PHP",
+            "timestamp": 1790931774,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000902",
+            "merchant": {
+                "order_ref": "CH-000969"
+            },
+            "payer_id": "CU-00089",
+            "total": "1374.23",
+            "ccy": "PHP",
+            "timestamp": 1791397764,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000247",
+            "merchant": {
+                "order_ref": "CH-000265"
+            },
+            "payer_id": "CU-00008",
+            "total": "3142.14",
+            "ccy": "PHP",
+            "timestamp": 1790972447,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000668",
+            "merchant": {
+                "order_ref": "CH-000711"
+            },
+            "payer_id": "CU-00008",
+            "total": "248969.59",
+            "ccy": "IDR",
+            "timestamp": 1791242420,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000614",
+            "merchant": {
+                "order_ref": "CH-000654"
+            },
+            "payer_id": "CU-00171",
+            "total": "226.25",
+            "ccy": "PHP",
+            "timestamp": 1791207351,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000059",
+            "merchant": {
+                "order_ref": "CH-000062"
+            },
+            "payer_id": "CU-00143",
+            "total": "1289.45",
+            "ccy": "THB",
+            "timestamp": 1790849746,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000020",
+            "merchant": {
+                "order_ref": "CH-000022"
+            },
+            "payer_id": "CU-00049",
+            "total": "371583.74",
+            "ccy": "IDR",
+            "timestamp": 1790825550,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000710",
+            "merchant": {
+                "order_ref": "CH-000759"
+            },
+            "payer_id": "CU-00002",
+            "total": "221.54",
+            "ccy": "THB",
+            "timestamp": 1791270732,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000377",
+            "merchant": {
+                "order_ref": "CH-000401"
+            },
+            "payer_id": "CU-00078",
+            "total": "569555.04",
+            "ccy": "IDR",
+            "timestamp": 1791054437,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000922",
+            "merchant": {
+                "order_ref": "CH-000990"
+            },
+            "payer_id": "CU-00011",
+            "total": "207626.47",
+            "ccy": "IDR",
+            "timestamp": 1791410512,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000071",
+            "merchant": {
+                "order_ref": "CH-000074"
+            },
+            "payer_id": "CU-00035",
+            "total": "1849.17",
+            "ccy": "THB",
+            "timestamp": 1790857072,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000443",
+            "merchant": {
+                "order_ref": "CH-000473"
+            },
+            "payer_id": "CU-00192",
+            "total": "307139.54",
+            "ccy": "IDR",
+            "timestamp": 1791098467,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000033",
+            "merchant": {
+                "order_ref": "CH-000036"
+            },
+            "payer_id": "CU-00082",
+            "total": "1387.09",
+            "ccy": "THB",
+            "timestamp": 1790834324,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000045",
+            "merchant": {
+                "order_ref": "CH-000048"
+            },
+            "payer_id": "CU-00104",
+            "total": "1831.35",
+            "ccy": "THB",
+            "timestamp": 1790841448,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000809",
+            "merchant": {
+                "order_ref": "CH-000867"
+            },
+            "payer_id": "CU-00048",
+            "total": "470466.05",
+            "ccy": "IDR",
+            "timestamp": 1791336193,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000180",
+            "merchant": {
+                "order_ref": "CH-000193"
+            },
+            "payer_id": "CU-00110",
+            "total": "1806.52",
+            "ccy": "PHP",
+            "timestamp": 1790928861,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000231",
+            "merchant": {
+                "order_ref": "CH-000247"
+            },
+            "payer_id": "CU-00048",
+            "total": "1380.59",
+            "ccy": "PHP",
+            "timestamp": 1790961917,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000562",
+            "merchant": {
+                "order_ref": "CH-000599"
+            },
+            "payer_id": "CU-00109",
+            "total": "187089.15",
+            "ccy": "IDR",
+            "timestamp": 1791174296,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000837",
+            "merchant": {
+                "order_ref": "CH-000897"
+            },
+            "payer_id": "CU-00094",
+            "total": "190699.44",
+            "ccy": "IDR",
+            "timestamp": 1791354309,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000023",
+            "merchant": {
+                "order_ref": "CH-000026"
+            },
+            "payer_id": "CU-00150",
+            "total": "259240.26",
+            "ccy": "IDR",
+            "timestamp": 1790828156,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000658",
+            "merchant": {
+                "order_ref": "CH-000701"
+            },
+            "payer_id": "CU-00169",
+            "total": "326399.01",
+            "ccy": "IDR",
+            "timestamp": 1791235609,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000852",
+            "merchant": {
+                "order_ref": "CH-000914"
+            },
+            "payer_id": "CU-00152",
+            "total": "245761.60",
+            "ccy": "IDR",
+            "timestamp": 1791364545,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000363",
+            "merchant": {
+                "order_ref": "CH-000387"
+            },
+            "payer_id": "CU-00006",
+            "total": "354359.02",
+            "ccy": "IDR",
+            "timestamp": 1791046446,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000806",
+            "merchant": {
+                "order_ref": "CH-000864"
+            },
+            "payer_id": "CU-00077",
+            "total": "1141.37",
+            "ccy": "THB",
+            "timestamp": 1791334465,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000331",
+            "merchant": {
+                "order_ref": "CH-000352"
+            },
+            "payer_id": "CU-00038",
+            "total": "2708.89",
+            "ccy": "PHP",
+            "timestamp": 1791024856,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000481",
+            "merchant": {
+                "order_ref": "CH-000513"
+            },
+            "payer_id": "CU-00186",
+            "total": "484.34",
+            "ccy": "THB",
+            "timestamp": 1791122110,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000515",
+            "merchant": {
+                "order_ref": "CH-000550"
+            },
+            "payer_id": "CU-00125",
+            "total": "477220.73",
+            "ccy": "IDR",
+            "timestamp": 1791144447,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000884",
+            "merchant": {
+                "order_ref": "CH-000948"
+            },
+            "payer_id": "CU-00131",
+            "total": "1719.57",
+            "ccy": "PHP",
+            "timestamp": 1791385325,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000471",
+            "merchant": {
+                "order_ref": "CH-000502"
+            },
+            "payer_id": "CU-00075",
+            "total": "291924.78",
+            "ccy": "IDR",
+            "timestamp": 1791115785,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000474",
+            "merchant": {
+                "order_ref": "CH-000506"
+            },
+            "payer_id": "CU-00189",
+            "total": "156.07",
+            "ccy": "THB",
+            "timestamp": 1791118187,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000539",
+            "merchant": {
+                "order_ref": "CH-000574"
+            },
+            "payer_id": "CU-00077",
+            "total": "63431.16",
+            "ccy": "IDR",
+            "timestamp": 1791159239,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000243",
+            "merchant": {
+                "order_ref": "CH-000259"
+            },
+            "payer_id": "CU-00137",
+            "total": "326759.83",
+            "ccy": "IDR",
+            "timestamp": 1790968789,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000151",
+            "merchant": {
+                "order_ref": "CH-000161"
+            },
+            "payer_id": "CU-00004",
+            "total": "237034.14",
+            "ccy": "IDR",
+            "timestamp": 1790909490,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000009",
+            "merchant": {
+                "order_ref": "CH-000011"
+            },
+            "payer_id": "CU-00104",
+            "total": "351975.80",
+            "ccy": "IDR",
+            "timestamp": 1790818994,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000834",
+            "merchant": {
+                "order_ref": "CH-000893"
+            },
+            "payer_id": "CU-00089",
+            "total": "1413.06",
+            "ccy": "THB",
+            "timestamp": 1791351867,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000193",
+            "merchant": {
+                "order_ref": "CH-000206"
+            },
+            "payer_id": "CU-00102",
+            "total": "1310.90",
+            "ccy": "THB",
+            "timestamp": 1790936734,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000466",
+            "merchant": {
+                "order_ref": "CH-000497"
+            },
+            "payer_id": "CU-00001",
+            "total": "2599.96",
+            "ccy": "PHP",
+            "timestamp": 1791112787,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000404",
+            "merchant": {
+                "order_ref": "CH-000431"
+            },
+            "payer_id": "CU-00175",
+            "total": "1835.86",
+            "ccy": "PHP",
+            "timestamp": 1791073019,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000547",
+            "merchant": {
+                "order_ref": "CH-000583"
+            },
+            "payer_id": "CU-00004",
+            "total": "1358.83",
+            "ccy": "THB",
+            "timestamp": 1791164413,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000908",
+            "merchant": {
+                "order_ref": "CH-000975"
+            },
+            "payer_id": "CU-00002",
+            "total": "276.27",
+            "ccy": "PHP",
+            "timestamp": 1791401203,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000537",
+            "merchant": {
+                "order_ref": "CH-000572"
+            },
+            "payer_id": "CU-00182",
+            "total": "184363.52",
+            "ccy": "IDR",
+            "timestamp": 1791157712,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000858",
+            "merchant": {
+                "order_ref": "CH-000920"
+            },
+            "payer_id": "CU-00171",
+            "total": "307797.36",
+            "ccy": "IDR",
+            "timestamp": 1791368084,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000630",
+            "merchant": {
+                "order_ref": "CH-000672"
+            },
+            "payer_id": "CU-00103",
+            "total": "2016.95",
+            "ccy": "PHP",
+            "timestamp": 1791218195,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000312",
+            "merchant": {
+                "order_ref": "CH-000334"
+            },
+            "payer_id": "CU-00185",
+            "total": "157665.25",
+            "ccy": "IDR",
+            "timestamp": 1791014067,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000365",
+            "merchant": {
+                "order_ref": "CH-000389"
+            },
+            "payer_id": "CU-00035",
+            "total": "448.45",
+            "ccy": "PHP",
+            "timestamp": 1791047478,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000788",
+            "merchant": {
+                "order_ref": "CH-000845"
+            },
+            "payer_id": "CU-00063",
+            "total": "1435.37",
+            "ccy": "THB",
+            "timestamp": 1791322747,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000923",
+            "merchant": {
+                "order_ref": "CH-000991"
+            },
+            "payer_id": "CU-00113",
+            "total": "259437.94",
+            "ccy": "IDR",
+            "timestamp": 1791411059,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000671",
+            "merchant": {
+                "order_ref": "CH-000716"
+            },
+            "payer_id": "CU-00068",
+            "total": "1648.78",
+            "ccy": "PHP",
+            "timestamp": 1791244800,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000063",
+            "merchant": {
+                "order_ref": "CH-000066"
+            },
+            "payer_id": "CU-00148",
+            "total": "136988.67",
+            "ccy": "IDR",
+            "timestamp": 1790852442,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000430",
+            "merchant": {
+                "order_ref": "CH-000459"
+            },
+            "payer_id": "CU-00143",
+            "total": "316190.39",
+            "ccy": "IDR",
+            "timestamp": 1791089664,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000269",
+            "merchant": {
+                "order_ref": "CH-000288"
+            },
+            "payer_id": "CU-00042",
+            "total": "428.11",
+            "ccy": "THB",
+            "timestamp": 1790986440,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000438",
+            "merchant": {
+                "order_ref": "CH-000468"
+            },
+            "payer_id": "CU-00002",
+            "total": "2457.69",
+            "ccy": "PHP",
+            "timestamp": 1791095266,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000273",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00011",
+            "total": "1696.11",
+            "ccy": "PHP",
+            "timestamp": 1790989546,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000916",
+            "merchant": {
+                "order_ref": "CH-000984"
+            },
+            "payer_id": "CU-00053",
+            "total": "383.57",
+            "ccy": "PHP",
+            "timestamp": 1791406738,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000058",
+            "merchant": {
+                "order_ref": "CH-000061"
+            },
+            "payer_id": "CU-00183",
+            "total": "55907.00",
+            "ccy": "IDR",
+            "timestamp": 1790849306,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000894",
+            "merchant": {
+                "order_ref": "CH-000958"
+            },
+            "payer_id": "CU-00166",
+            "total": "1760.20",
+            "ccy": "PHP",
+            "timestamp": 1791393550,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000753",
+            "merchant": {
+                "order_ref": "CH-000807"
+            },
+            "payer_id": "CU-00183",
+            "total": "438900.50",
+            "ccy": "IDR",
+            "timestamp": 1791299936,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000098",
+            "merchant": {
+                "order_ref": "CH-000103"
+            },
+            "payer_id": "CU-00188",
+            "total": "250663.25",
+            "ccy": "IDR",
+            "timestamp": 1790874854,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000951",
+            "merchant": {
+                "order_ref": "CH-900020"
+            },
+            "payer_id": "CU-P0020",
+            "total": "392432.00",
+            "ccy": "IDR",
+            "timestamp": 1791291146,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000736",
+            "merchant": {
+                "order_ref": "CH-000787"
+            },
+            "payer_id": "CU-00098",
+            "total": "593809.33",
+            "ccy": "IDR",
+            "timestamp": 1791287730,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000055",
+            "merchant": {
+                "order_ref": "CH-000058"
+            },
+            "payer_id": "CU-00161",
+            "total": "167388.05",
+            "ccy": "IDR",
+            "timestamp": 1790847754,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000822",
+            "merchant": {
+                "order_ref": null
+            },
+            "payer_id": "CU-00032",
+            "total": "1665.07",
+            "ccy": "THB",
+            "timestamp": 1791344280,
+            "state": "refunded"
+        },
+        {
+            "payment_reference": "GW-00000603",
+            "merchant": {
+                "order_ref": "CH-000641"
+            },
+            "payer_id": "CU-00096",
+            "total": "1625.85",
+            "ccy": "PHP",
+            "timestamp": 1791199798,
+            "state": "success"
+        },
+        {
+            "payment_reference": "GW-00000617",
+            "merchant": {
+                "order_ref": "CH-000658"
+            },
+            "payer_id": "CU-00165",
+            "total": "537296.83",
+            "ccy": "IDR",
+            "timestamp": 1791209953,
+            "state": "success"
+        }
+    ]
+}

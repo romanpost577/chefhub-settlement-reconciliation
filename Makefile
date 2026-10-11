@@ -384,3 +384,11 @@ composer-require-checker: ## Check defined dependencies against actual code usag
 
 composer-unused: ## Detect unused Composer packages by scanning namespaces
 	@make exec-bash cmd="XDEBUG_MODE=off php ./vendor/bin/composer-unused"
+
+reconcile-demo: ## Generate the 1,000-order sample and reconcile it
+	@make exec cmd="php bin/console app:generate-test-data --orders=1000 --seed=42 --out=data/sample"
+	@make exec cmd="php bin/console app:reconcile"
+
+reconcile-full: ## Generate ~47K transactions and reconcile them (Xdebug off)
+	@make exec cmd="php bin/console app:generate-test-data --orders=45600 --seed=42 --out=data/full"
+	@make exec cmd="php -dxdebug.mode=off bin/console app:reconcile --internal=data/full/internal_orders.csv --processor-a=data/full/processor_a_settlement.csv --processor-b=data/full/processor_b_settlement.json --out=var/reports-full"

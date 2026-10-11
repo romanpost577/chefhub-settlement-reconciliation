@@ -58,4 +58,8 @@ reports/*
 .php_cs.cache
 ###< friendsofphp/php-cs-fixer ###
 /.idea/
-/.idea/
+
+###> reconciliation ###
+/data/full/
+/var/reports-full/
+###< reconciliation ###

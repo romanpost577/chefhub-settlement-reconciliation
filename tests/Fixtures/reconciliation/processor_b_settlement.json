@@ -1,0 +1,10 @@
+{
+  "provider": "GoWallet",
+  "report_period": {"from": "2026-10-01", "to": "2026-10-07"},
+  "transactions": [
+    {"payment_reference": "GW-00000001", "merchant": {"order_ref": "ch3"}, "payer_id": "CU-00003", "total": "150000.00", "ccy": "IDR", "timestamp": 1790906400, "state": "success"},
+    {"payment_reference": "GW-00000002", "merchant": {"order_ref": "CH-000004"}, "payer_id": "CU-00004", "total": "99000.00", "ccy": "IDR", "timestamp": 1790910000, "state": "success"},
+    {"payment_reference": "GW-00000003", "merchant": {"order_ref": null}, "payer_id": "CU-00005", "total": "500.00", "ccy": "THB", "timestamp": 1791003602, "state": "success"},
+    {"payment_reference": "GW-00000004", "merchant": {"order_ref": "CH-000006"}, "payer_id": "CU-00006", "total": "320.00", "ccy": "THB", "timestamp": 1791010800, "state": "success"}
+  ]
+}
