@@ -14,6 +14,7 @@ use App\Reconciliation\Model\PaymentStatus;
 use App\Reconciliation\Model\Priority;
 use App\Reconciliation\Model\ReconciliationResult;
 use App\Reconciliation\Model\Transaction;
+use DateTimeImmutable;
 
 /**
  * Pure matching logic: exact match by order ref, fuzzy fallback, then classification. O(n) via hash indexes.
@@ -152,7 +153,7 @@ final readonly class Reconciler
                 return [null, []];
             }
 
-            return [null, [$this->discrepancy(
+            $missing = $this->discrepancy(
                 DiscrepancyType::MISSING_IN_SETTLEMENT,
                 $order,
                 null,
@@ -160,17 +161,14 @@ final readonly class Reconciler
                 $order->currency,
                 null,
                 'order was never settled by any processor',
-            )]];
+            );
+
+            return [null, [$missing]];
         }
-        usort($pairs, static fn (MatchedPair $a, MatchedPair $b): int => [
-            $a->settlement->currency !== $order->currency,
-            abs($a->settlement->amountMinor - $order->amountMinor),
-            $a->settlement->occurredAt,
-        ] <=> [
-            $b->settlement->currency !== $order->currency,
-            abs($b->settlement->amountMinor - $order->amountMinor),
-            $b->settlement->occurredAt,
-        ]);
+        usort(
+            $pairs,
+            static fn (MatchedPair $a, MatchedPair $b): int => self::primaryRank($a) <=> self::primaryRank($b),
+        );
         $primary = $pairs[0];
         $primaryIssues = $this->comparePrimary($primary);
         $discrepancies = $primaryIssues;
@@ -208,8 +206,20 @@ final readonly class Reconciler
                 sprintf('order is %s, processor reports %s', $order->status->value, $settlement->status->value),
             );
         }
+        $amountIssue = $this->amountIssue($pair);
+        if ($amountIssue !== null) {
+            $issues[] = $amountIssue;
+        }
+
+        return $issues;
+    }
+
+    private function amountIssue(MatchedPair $pair): ?Discrepancy
+    {
+        $order = $pair->order;
+        $settlement = $pair->settlement;
         if ($order->currency !== $settlement->currency) {
-            $issues[] = $this->discrepancy(
+            return $this->discrepancy(
                 DiscrepancyType::AMOUNT_MISMATCH,
                 $order,
                 $settlement,
@@ -224,8 +234,9 @@ final readonly class Reconciler
                     Money::format($settlement->amountMinor),
                 ),
             );
-        } elseif (abs($settlement->amountMinor - $order->amountMinor) > self::AMOUNT_TOLERANCE_MINOR) {
-            $issues[] = $this->discrepancy(
+        }
+        if (abs($settlement->amountMinor - $order->amountMinor) > self::AMOUNT_TOLERANCE_MINOR) {
+            return $this->discrepancy(
                 DiscrepancyType::AMOUNT_MISMATCH,
                 $order,
                 $settlement,
@@ -240,7 +251,21 @@ final readonly class Reconciler
             );
         }
 
-        return $issues;
+        return null;
+    }
+
+    /**
+     * Same currency first, then the closest amount, then the earliest payment.
+     *
+     * @return array{bool, int, DateTimeImmutable}
+     */
+    private static function primaryRank(MatchedPair $pair): array
+    {
+        return [
+            $pair->settlement->currency !== $pair->order->currency,
+            abs($pair->settlement->amountMinor - $pair->order->amountMinor),
+            $pair->settlement->occurredAt,
+        ];
     }
 
     /**

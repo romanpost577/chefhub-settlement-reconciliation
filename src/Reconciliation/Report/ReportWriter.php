@@ -6,11 +6,14 @@ namespace App\Reconciliation\Report;
 
 use JsonException;
 use RuntimeException;
+use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
+use Symfony\Component\Filesystem\Filesystem;
 
 final readonly class ReportWriter
 {
     public function __construct(
         private CsvWriter $csvWriter,
+        private Filesystem $filesystem = new Filesystem(),
     ) {
     }
 
@@ -21,8 +24,10 @@ final readonly class ReportWriter
      */
     public function write(ReconciliationReport $report, string $directory): array
     {
-        if (!is_dir($directory) && !@mkdir($directory, 0775, true) && !is_dir($directory)) {
-            throw new RuntimeException(sprintf('Cannot create directory "%s"', $directory));
+        try {
+            $this->filesystem->mkdir($directory);
+        } catch (IOExceptionInterface $exception) {
+            throw new RuntimeException(sprintf('Cannot create directory "%s"', $directory), 0, $exception);
         }
         $jsonPath = $directory . '/report.json';
         $discrepanciesPath = $directory . '/discrepancies.csv';
@@ -37,8 +42,11 @@ final readonly class ReportWriter
         } catch (JsonException $exception) {
             throw new RuntimeException('Cannot encode report: ' . $exception->getMessage(), 0, $exception);
         }
-        if (file_put_contents($jsonPath, $json . "\n") === false) {
-            throw new RuntimeException(sprintf('Cannot write file "%s"', $jsonPath));
+
+        try {
+            $this->filesystem->dumpFile($jsonPath, $json . "\n");
+        } catch (IOExceptionInterface $exception) {
+            throw new RuntimeException(sprintf('Cannot write file "%s"', $jsonPath), 0, $exception);
         }
         $this->csvWriter->write($discrepanciesPath, ReconciliationReport::DISCREPANCY_COLUMNS, $report->discrepancies);
         $this->csvWriter->write($payoutsPath, ReconciliationReport::CHEF_PAYOUT_COLUMNS, $report->chefPayouts);

@@ -80,7 +80,8 @@ final readonly class ChefPayoutCalculator
         }, $lines);
         usort(
             $payouts,
-            fn (ChefPayout $a, ChefPayout $b): int => [$this->onHoldUsd($b), $a->chefId] <=> [$this->onHoldUsd($a), $b->chefId],
+            fn (ChefPayout $a, ChefPayout $b): int
+                => [$this->onHoldUsd($b), $a->chefId] <=> [$this->onHoldUsd($a), $b->chefId],
         );
 
         return $payouts;

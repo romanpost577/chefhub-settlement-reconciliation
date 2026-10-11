@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Reconciliation\Report;
 
 use RuntimeException;
+use SplFileObject;
 
 final class CsvWriter
 {
@@ -21,24 +22,19 @@ final class CsvWriter
      */
     public function write(string $path, array $columns, iterable $rows): void
     {
-        $handle = @fopen($path, 'wb');
-        if ($handle === false) {
-            throw new RuntimeException(sprintf('Cannot write file "%s"', $path));
-        }
-
         try {
-            fputcsv($handle, $columns, ',', '"', '');
-            foreach ($rows as $row) {
-                fputcsv(
-                    $handle,
-                    array_map(static fn (string $column): string => self::cell($row[$column] ?? null), $columns),
-                    ',',
-                    '"',
-                    '',
-                );
-            }
-        } finally {
-            fclose($handle);
+            $file = new SplFileObject($path, 'wb');
+        } catch (RuntimeException $exception) {
+            throw new RuntimeException(sprintf('Cannot write file "%s"', $path), 0, $exception);
+        }
+        $file->fputcsv($columns, ',', '"', '');
+        foreach ($rows as $row) {
+            $file->fputcsv(
+                array_map(static fn (string $column): string => self::cell($row[$column] ?? null), $columns),
+                ',',
+                '"',
+                '',
+            );
         }
     }
 

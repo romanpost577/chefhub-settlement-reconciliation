@@ -15,8 +15,9 @@ use App\Tests\Unit\Reconciliation\TransactionFactory;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Scenario: CH-000001 missing (PHP 100.00 → USD 1.72), CH-000002 fuzzy match, CH-000003 amount mismatch IDR 30.00
- * (USD 0.00), CH-000004 status mismatch PHP 500.00 (USD 8.60), CH-000005 exact match, PA-9 phantom THB 200.00 (USD 5.70).
+ * Scenario: CH-000001 missing (PHP 100.00 → USD 1.72), CH-000002 fuzzy match,
+ * CH-000003 amount mismatch IDR 30.00 (USD 0.00), CH-000004 status mismatch PHP 500.00 (USD 8.60),
+ * CH-000005 exact match, PA-9 phantom THB 200.00 (USD 5.70).
  */
 final class ReportBuilderTest extends TestCase
 {
@@ -140,7 +141,14 @@ final class ReportBuilderTest extends TestCase
         ];
         $settlements = [
             self::settlement('PA-1', 'CH-000005', 30000, customerId: 'CU-5'),
-            self::settlement('GW-1', null, 20000, customerId: 'CU-2', time: '2026-10-02 11:00:03', source: Source::PROCESSOR_B),
+            self::settlement(
+                'GW-1',
+                null,
+                20000,
+                customerId: 'CU-2',
+                time: '2026-10-02 11:00:03',
+                source: Source::PROCESSOR_B,
+            ),
             self::settlement('PA-3', 'CH-000003', 103000, customerId: 'CU-3', currency: 'IDR'),
             self::settlement('PA-4', 'CH-000004', 50000, customerId: 'CU-4'),
             self::settlement('PA-9', 'CH-900001', 20000, customerId: 'CU-P1', currency: 'THB'),

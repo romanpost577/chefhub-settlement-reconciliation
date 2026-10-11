@@ -32,6 +32,9 @@ final class ReconcileCommand extends Command
 {
     private const int BYTES_IN_MB = 1_048_576;
     private const int NANOSECONDS_IN_MS = 1_000_000;
+    private const string DEFAULT_INTERNAL = 'data/sample/internal_orders.csv';
+    private const string DEFAULT_A = 'data/sample/processor_a_settlement.csv';
+    private const string DEFAULT_B = 'data/sample/processor_b_settlement.json';
 
     public function __construct(
         private readonly InternalOrdersCsvReader $internalReader,
@@ -48,9 +51,9 @@ final class ReconcileCommand extends Command
     protected function configure(): void
     {
         $this
-            ->addOption('internal', null, InputOption::VALUE_REQUIRED, 'Internal orders CSV', 'data/sample/internal_orders.csv')
-            ->addOption('processor-a', null, InputOption::VALUE_REQUIRED, 'Processor A settlement CSV', 'data/sample/processor_a_settlement.csv')
-            ->addOption('processor-b', null, InputOption::VALUE_REQUIRED, 'Processor B settlement JSON', 'data/sample/processor_b_settlement.json')
+            ->addOption('internal', null, InputOption::VALUE_REQUIRED, 'Internal orders CSV', self::DEFAULT_INTERNAL)
+            ->addOption('processor-a', null, InputOption::VALUE_REQUIRED, 'Processor A report (CSV)', self::DEFAULT_A)
+            ->addOption('processor-b', null, InputOption::VALUE_REQUIRED, 'Processor B report (JSON)', self::DEFAULT_B)
             ->addOption('out', null, InputOption::VALUE_REQUIRED, 'Output directory', 'var/reports');
     }
 

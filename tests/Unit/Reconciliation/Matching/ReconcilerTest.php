@@ -134,7 +134,14 @@ final class ReconcilerTest extends TestCase
     {
         $result = $this->reconcile(
             [self::order('CH-000001', 10000, customerId: 'CU-7', time: '2026-10-02 10:00:00')],
-            [self::settlement('GW-1', null, 10000, customerId: 'CU-7', time: '2026-10-02 10:00:05', source: Source::PROCESSOR_B)],
+            [self::settlement(
+                'GW-1',
+                null,
+                10000,
+                customerId: 'CU-7',
+                time: '2026-10-02 10:00:05',
+                source: Source::PROCESSOR_B,
+            )],
         );
 
         self::assertSame([], $result->discrepancies);

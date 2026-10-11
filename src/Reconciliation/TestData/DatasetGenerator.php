@@ -256,7 +256,8 @@ final class DatasetGenerator
             $viaA = $this->percent(self::PROCESSOR_A_SHARE_PERCENT);
             $ref = $viaA || $this->random->getInt(0, 1) === 1 ? sprintf('CH-9%05d', $i) : null;
             $paidAt = $start + $this->random->getInt(0, self::WEEK_SECONDS - 1);
-            $phantom = new GeneratedOrder('', sprintf('CU-P%04d', $i), '', $currency, $this->random->getInt($min, $max), $paidAt);
+            $amount = $this->random->getInt($min, $max);
+            $phantom = new GeneratedOrder('', sprintf('CU-P%04d', $i), '', $currency, $amount, $paidAt);
             $this->settle($viaA, $ref, $phantom, $phantom->amountMinor, $paidAt, false);
         }
         $this->expected[DiscrepancyType::MISSING_IN_DATABASE->value] = $count;

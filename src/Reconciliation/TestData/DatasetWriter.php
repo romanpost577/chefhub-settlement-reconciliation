@@ -7,6 +7,8 @@ namespace App\Reconciliation\TestData;
 use App\Reconciliation\Report\CsvWriter;
 use JsonException;
 use RuntimeException;
+use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
+use Symfony\Component\Filesystem\Filesystem;
 
 final readonly class DatasetWriter
 {
@@ -25,6 +27,7 @@ final readonly class DatasetWriter
 
     public function __construct(
         private CsvWriter $csvWriter,
+        private Filesystem $filesystem = new Filesystem(),
     ) {
     }
 
@@ -33,11 +36,21 @@ final readonly class DatasetWriter
      */
     public function write(GeneratedDataset $dataset, string $directory): void
     {
-        if (!is_dir($directory) && !@mkdir($directory, 0775, true) && !is_dir($directory)) {
-            throw new RuntimeException(sprintf('Cannot create directory "%s"', $directory));
+        try {
+            $this->filesystem->mkdir($directory);
+        } catch (IOExceptionInterface $exception) {
+            throw new RuntimeException(sprintf('Cannot create directory "%s"', $directory), 0, $exception);
         }
-        $this->csvWriter->write($directory . '/' . self::INTERNAL_FILE, self::INTERNAL_COLUMNS, $dataset->internalOrders);
-        $this->csvWriter->write($directory . '/' . self::PROCESSOR_A_FILE, self::PROCESSOR_A_COLUMNS, $dataset->processorA);
+        $this->csvWriter->write(
+            $directory . '/' . self::INTERNAL_FILE,
+            self::INTERNAL_COLUMNS,
+            $dataset->internalOrders,
+        );
+        $this->csvWriter->write(
+            $directory . '/' . self::PROCESSOR_A_FILE,
+            self::PROCESSOR_A_COLUMNS,
+            $dataset->processorA,
+        );
         $this->writeJson($directory . '/' . self::PROCESSOR_B_FILE, [
             'provider' => 'GoWallet',
             'report_period' => [
@@ -61,8 +74,11 @@ final readonly class DatasetWriter
         } catch (JsonException $exception) {
             throw new RuntimeException('Cannot encode ' . $path, 0, $exception);
         }
-        if (file_put_contents($path, $json . "\n") === false) {
-            throw new RuntimeException(sprintf('Cannot write file "%s"', $path));
+
+        try {
+            $this->filesystem->dumpFile($path, $json . "\n");
+        } catch (IOExceptionInterface $exception) {
+            throw new RuntimeException(sprintf('Cannot write file "%s"', $path), 0, $exception);
         }
     }
 }

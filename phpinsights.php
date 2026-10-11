@@ -102,6 +102,12 @@ return [
                 '&' => 'align',
             ],
         ],
+        // False positive: static methods inside enums are reported as global functions.
+        NunoMaduro\PhpInsights\Domain\Insights\ForbiddenDefineFunctions::class => [
+            'exclude' => [
+                'src/Reconciliation/Model/Priority.php',
+            ],
+        ],
         SlevomatCodingStandard\Sniffs\Functions\UnusedParameterSniff::class => [
             'exclude' => [
                 'src/MessageHandler/TestHandler.php',

@@ -197,5 +197,4 @@ Line coverage of `src/`: 96.8 %.
 - A settlement without a reference for an order that already has a settlement is reported as `missing_in_database`,
   not as a duplicate.
 - A header with quoted column names after a UTF-8 BOM is not recognized (a plain Excel BOM is).
-- An output directory that exists but is not writable fails with a PHP warning instead of a short message.
 - Runs are not idempotent: each run writes a new timestamped folder.
